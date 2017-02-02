@@ -1,0 +1,315 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>Prototipo</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>kb7ceyo328hr</unique-id>
+    <saved-with-version>24100</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Particles" version="1">Particles</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Spritefont2" version="1">Sprite font</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="Tilemap" version="1">Tilemap</plugin>
+        <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Pathfinding" version="1">Pathfinding</behavior>
+        <behavior author="Scirra" id="Rotate" version="1">Rotate</behavior>
+        <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
+        <behavior author="Scirra" id="custom" version="1">Custom Movement</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
+    <used-effects>
+        <effect author="Scirra" id="glowhorizontal">Glow Horizontal</effect>
+        <effect author="Scirra" id="glowvertical">Glow Vertical</effect>
+        <effect author="Scirra" id="setcolor">Set color</effect>
+        <effect author="Brad Larson" id="sphere">Sphere</effect>
+    </used-effects>
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>384</width>
+        <height>640</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Construct 2 splash</prop>
+        <prop name="Orientations">Portrait</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="Spawner" sid="822932609289389">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Rotate" sid="863670790516020">
+                    <behavior id="Rotate" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="558261129358138" speed="5">
+                    <frame duration="1" hotspotX="3.82813" hotspotY="6">
+                        <image-point name="Imagepoint 1" x="0.5" y="0.5" />
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="RedOrb" sid="977690744552527">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="Tipo" sid="624960070785317" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="378363355033066" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Player" sid="141901324043641">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="612134298521535" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Touch" sid="458631802563508">
+            <plugin id="Touch" />
+        </object-type>
+        <object-type name="Tilemap" sid="751322677118248">
+            <plugin id="Tilemap" />
+            <texture original-source="C:\Users\Taymon\Documents\GitHub\PosGamesUEA_Prof_Jucimar\FirstWork\assets\../../../../UEA/POS/Game Design/Projetos/TapperGame/tilesetHouse.png" />
+            <tiles />
+        </object-type>
+        <object-type name="MagicCircle" sid="372433119889360">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Rotate" sid="352103338627109">
+                    <behavior id="Rotate" />
+                </behavior-type>
+            </behaviors>
+            <effects>
+                <effect-type name="GlowHorizontal">
+                    <effect id="glowhorizontal" />
+                </effect-type>
+                <effect-type name="GlowVertical">
+                    <effect id="glowvertical" />
+                </effect-type>
+                <effect-type name="SetColor">
+                    <effect id="setcolor" />
+                </effect-type>
+            </effects>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="327154429071504" speed="5">
+                    <frame duration="1" hotspotX="0.49941" hotspotY="0.49941" original-source="C:\Users\Taymon\Documents\GitHub\PosGamesUEA_Prof_Jucimar\FirstWork\assets\magical_circle.png">
+                        <collision-poly>
+                            <point x="0.140496" y="0.177096" />
+                            <point x="0.495868" y="0.0177096" />
+                            <point x="0.854782" y="0.173554" />
+                            <point x="0.98229" y="0.49941" />
+                            <point x="0.854782" y="0.826446" />
+                            <point x="0.495868" y="0.98229" />
+                            <point x="0.140496" y="0.822904" />
+                            <point x="0.0177096" y="0.49941" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BlueOrb" sid="645079901790315">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="Tipo" sid="206429402642524" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="368776644349532" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="YellowOrb" sid="785307677289530">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="Tipo" sid="863691705624507" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="839377757702211" speed="5">
+                    <frame duration="1" hotspotX="0.617647" hotspotY="0.617647" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="GreenOrb" sid="231993121802199">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="Tipo" sid="981911967330718" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="281793079505966" speed="5">
+                    <frame duration="1" hotspotX="0.617647" hotspotY="0.617647" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Particles" sid="325849650957975">
+            <plugin id="Particles" />
+            <texture />
+        </object-type>
+        <object-type name="HUDRedOrb" sid="926074540186569">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="279310421199216" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="HUDBlueOrb" sid="920127667392038">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="186769838612017" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="HUDGreenOrb" sid="572425638974898">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="715387187263968" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="HUDYellowOrb" sid="661775676985186">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="318041762668918" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Label" sid="245065796533792">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Points" sid="250565880611020">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="SpriteFont" sid="647067753145834">
+            <plugin id="Spritefont2" />
+            <texture />
+        </object-type>
+        <object-type name="MonsterSpawner" sid="323902796213616">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="599085204869704" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Monster" sid="407769121121778">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pathfinding" sid="286756409628621">
+                    <behavior id="Pathfinding" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="908316239577774" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Wall" sid="817767496683574">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="671037178396763">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="134942135296270" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="HUDbars" sid="959769133865297">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="231728435801692" speed="5">
+                    <frame duration="1" hotspotX="0.735974" hotspotY="-0.0859375" original-source="C:\Users\Taymon\Downloads\Hud_0_0.png">
+                        <collision-poly>
+                            <point x="0.0429043" y="0" />
+                            <point x="0.735974" y="0" />
+                            <point x="1" y="0" />
+                            <point x="0.927393" y="0" />
+                            <point x="0.735974" y="0.9375" />
+                            <point x="0.0561056" y="0.828125" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+    </object-folder>
+    <families>
+        <family name="Orbs" plugin-id="Sprite" sid="112826236286398">
+            <members>
+                <member>BlueOrb</member>
+                <member>GreenOrb</member>
+                <member>RedOrb</member>
+                <member>YellowOrb</member>
+            </members>
+            <behaviors>
+                <behavior-type name="Sine" sid="243585046321962">
+                    <behavior id="Sin" />
+                </behavior-type>
+                <behavior-type name="CustomMovement2" sid="964649554968467">
+                    <behavior id="custom" />
+                </behavior-type>
+            </behaviors>
+            <effects>
+                <effect-type name="Sphere">
+                    <effect id="sphere" />
+                </effect-type>
+            </effects>
+        </family>
+    </families>
+    <layout-folder>
+        <layout>Layout 1.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Event sheet 1.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Touch" uid="0">
+            <properties>
+                <use-mouse-input>Yes</use-mouse-input>
+            </properties>
+        </global-instance>
+    </global-instances>
+    <sounds-folder />
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>

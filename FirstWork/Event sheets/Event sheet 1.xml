@@ -1,0 +1,729 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 1</name>
+    <events>
+        <variable constant="0" name="Score" sid="282431716719295" static="0" type="number">0</variable>
+        <variable comment="0 = Red, 1 = Green, 2 = Blue, 3 = Yellow" constant="0" name="OrbSequence" sid="357652209226878" static="0" type="number">0</variable>
+        <variable comment="0 = Red, 1 = Green, 2 = Blue, 3 = Yellow" constant="0" name="OrbCollision" sid="437050930948649" static="0" type="number">0</variable>
+        <variable comment="Maior valor menor frequencia de respawn" constant="0" name="OrbFrequency" sid="533211467097772" static="0" type="number">10</variable>
+        <variable comment="Velocidade dos orbs" constant="0" name="OrbSpeed" sid="340247056138377" static="0" type="number">1000</variable>
+        <variable comment="Define qual Orb vai nascer no topo" constant="0" name="TopSpawner" sid="705364746027670" static="0" type="number">0</variable>
+        <variable comment="Define qual Orb vai nascer ne esquerda" constant="0" name="LeftSpawner" sid="337039603654540" static="0" type="number">0</variable>
+        <variable comment="Define qual Orb vai nascer na direita" constant="0" name="RightSpawner" sid="536691652957531" static="0" type="number">0</variable>
+        <variable comment="Define qual Orb vai nascer embaixo" constant="0" name="BottomSpawner" sid="690173951368430" static="0" type="number">0</variable>
+        <event-block sid="164971560099782">
+            <conditions>
+                <condition id="-8" name="Compare two values" sid="268954867628084" type="System">
+                    <param id="0" name="First value">OrbSequence</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Second value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-28" name="Set effect parameter" sid="538499098899377" type="MagicCircle">
+                    <param id="0" name="Effect">&quot;SetColor&quot;</param>
+                    <param id="1" name="Parameter index">0</param>
+                    <param id="2" name="Value">100</param>
+                </action>
+                <action id="-28" name="Set effect parameter" sid="984314366185630" type="MagicCircle">
+                    <param id="0" name="Effect">&quot;SetColor&quot;</param>
+                    <param id="1" name="Parameter index">1</param>
+                    <param id="2" name="Value">0</param>
+                </action>
+                <action id="-28" name="Set effect parameter" sid="157489014574853" type="MagicCircle">
+                    <param id="0" name="Effect">&quot;SetColor&quot;</param>
+                    <param id="1" name="Parameter index">2</param>
+                    <param id="2" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="349016236362994">
+            <conditions>
+                <condition id="-8" name="Compare two values" sid="591981966934118" type="System">
+                    <param id="0" name="First value">OrbSequence</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Second value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-28" name="Set effect parameter" sid="668110669625813" type="MagicCircle">
+                    <param id="0" name="Effect">&quot;SetColor&quot;</param>
+                    <param id="1" name="Parameter index">0</param>
+                    <param id="2" name="Value">0</param>
+                </action>
+                <action id="-28" name="Set effect parameter" sid="400236940959336" type="MagicCircle">
+                    <param id="0" name="Effect">&quot;SetColor&quot;</param>
+                    <param id="1" name="Parameter index">1</param>
+                    <param id="2" name="Value">100</param>
+                </action>
+                <action id="-28" name="Set effect parameter" sid="691654224049324" type="MagicCircle">
+                    <param id="0" name="Effect">&quot;SetColor&quot;</param>
+                    <param id="1" name="Parameter index">2</param>
+                    <param id="2" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="853882489044924">
+            <conditions>
+                <condition id="-8" name="Compare two values" sid="846516100055182" type="System">
+                    <param id="0" name="First value">OrbSequence</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Second value">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-28" name="Set effect parameter" sid="949521229407297" type="MagicCircle">
+                    <param id="0" name="Effect">&quot;SetColor&quot;</param>
+                    <param id="1" name="Parameter index">0</param>
+                    <param id="2" name="Value">0</param>
+                </action>
+                <action id="-28" name="Set effect parameter" sid="541206466806910" type="MagicCircle">
+                    <param id="0" name="Effect">&quot;SetColor&quot;</param>
+                    <param id="1" name="Parameter index">1</param>
+                    <param id="2" name="Value">0</param>
+                </action>
+                <action id="-28" name="Set effect parameter" sid="981519085414586" type="MagicCircle">
+                    <param id="0" name="Effect">&quot;SetColor&quot;</param>
+                    <param id="1" name="Parameter index">2</param>
+                    <param id="2" name="Value">100</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="828395438975177">
+            <conditions>
+                <condition id="-8" name="Compare two values" sid="201302540987057" type="System">
+                    <param id="0" name="First value">OrbSequence</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Second value">3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-28" name="Set effect parameter" sid="436914093070767" type="MagicCircle">
+                    <param id="0" name="Effect">&quot;SetColor&quot;</param>
+                    <param id="1" name="Parameter index">0</param>
+                    <param id="2" name="Value">100</param>
+                </action>
+                <action id="-28" name="Set effect parameter" sid="805637409305785" type="MagicCircle">
+                    <param id="0" name="Effect">&quot;SetColor&quot;</param>
+                    <param id="1" name="Parameter index">1</param>
+                    <param id="2" name="Value">100</param>
+                </action>
+                <action id="-28" name="Set effect parameter" sid="809648163383349" type="MagicCircle">
+                    <param id="0" name="Effect">&quot;SetColor&quot;</param>
+                    <param id="1" name="Parameter index">2</param>
+                    <param id="2" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="Tratamento dos spawners dos orbs" sid="531579919964629" title="Orb Spawners">
+            <sub-events>
+                <comment>Top Spawner</comment>
+                <event-block sid="282982812898391">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="223168086715960" type="System">
+                            <param id="0" name="Interval (seconds)">floor(random(0,OrbFrequency))</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="492171891075175" type="System">
+                            <param id="0" name="Variable">TopSpawner</param>
+                            <param id="1" name="Value">floor(random(0,4))</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="481462865519854">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="135453802871688" type="System">
+                                    <param id="0" name="Variable">TopSpawner</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Create object" sid="274421996760448" type="System">
+                                    <param id="0" name="Object to create">RedOrb</param>
+                                    <param id="1" name="Layer">1</param>
+                                    <param id="2" name="X">random(-16,400)</param>
+                                    <param id="3" name="Y">-30</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="800614353296031">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="951986465168484" type="System">
+                                    <param id="0" name="Variable">TopSpawner</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Create object" sid="444870941040658" type="System">
+                                    <param id="0" name="Object to create">GreenOrb</param>
+                                    <param id="1" name="Layer">1</param>
+                                    <param id="2" name="X">random(-16,400)</param>
+                                    <param id="3" name="Y">-30</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="414063732043397">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="497923869407894" type="System">
+                                    <param id="0" name="Variable">TopSpawner</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Create object" sid="285131508601594" type="System">
+                                    <param id="0" name="Object to create">BlueOrb</param>
+                                    <param id="1" name="Layer">1</param>
+                                    <param id="2" name="X">random(-16,400)</param>
+                                    <param id="3" name="Y">-30</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="142237005922164">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="528680233369222" type="System">
+                                    <param id="0" name="Variable">TopSpawner</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Create object" sid="319126470045950" type="System">
+                                    <param id="0" name="Object to create">YellowOrb</param>
+                                    <param id="1" name="Layer">1</param>
+                                    <param id="2" name="X">random(-16,400)</param>
+                                    <param id="3" name="Y">-30</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <comment>Left Spawner</comment>
+                <event-block sid="489381156362277">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="561959919362568" type="System">
+                            <param id="0" name="Interval (seconds)">floor(random(0,OrbFrequency))</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="697756195930689" type="System">
+                            <param id="0" name="Variable">LeftSpawner</param>
+                            <param id="1" name="Value">floor(random(0,4))</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="912400767745242">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="481099863070996" type="System">
+                                    <param id="0" name="Variable">LeftSpawner</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Create object" sid="643461290312820" type="System">
+                                    <param id="0" name="Object to create">RedOrb</param>
+                                    <param id="1" name="Layer">1</param>
+                                    <param id="2" name="X">-16</param>
+                                    <param id="3" name="Y">random(-16,656)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="486740342783670">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="198823664790710" type="System">
+                                    <param id="0" name="Variable">LeftSpawner</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Create object" sid="967830398264925" type="System">
+                                    <param id="0" name="Object to create">GreenOrb</param>
+                                    <param id="1" name="Layer">1</param>
+                                    <param id="2" name="X">-16</param>
+                                    <param id="3" name="Y">random(-16,656)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="635533376283143">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="608702807589497" type="System">
+                                    <param id="0" name="Variable">LeftSpawner</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Create object" sid="723498721415010" type="System">
+                                    <param id="0" name="Object to create">BlueOrb</param>
+                                    <param id="1" name="Layer">1</param>
+                                    <param id="2" name="X">-6</param>
+                                    <param id="3" name="Y">random(-16,656)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="304265369930674">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="287684476278715" type="System">
+                                    <param id="0" name="Variable">LeftSpawner</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Create object" sid="761643516095237" type="System">
+                                    <param id="0" name="Object to create">YellowOrb</param>
+                                    <param id="1" name="Layer">1</param>
+                                    <param id="2" name="X">-16</param>
+                                    <param id="3" name="Y">random(-16,656)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <comment>Right Spawner</comment>
+                <event-block sid="496375497744997">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="248542924079622" type="System">
+                            <param id="0" name="Interval (seconds)">floor(random(0,OrbFrequency))</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="468771826876017" type="System">
+                            <param id="0" name="Variable">RightSpawner</param>
+                            <param id="1" name="Value">floor(random(0,4))</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="509449384470279">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="228499416750016" type="System">
+                                    <param id="0" name="Variable">RightSpawner</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Create object" sid="273522351935095" type="System">
+                                    <param id="0" name="Object to create">RedOrb</param>
+                                    <param id="1" name="Layer">1</param>
+                                    <param id="2" name="X">400</param>
+                                    <param id="3" name="Y">random(-16,656)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="790843746842767">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="326504736947575" type="System">
+                                    <param id="0" name="Variable">RightSpawner</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Create object" sid="735534609651017" type="System">
+                                    <param id="0" name="Object to create">GreenOrb</param>
+                                    <param id="1" name="Layer">1</param>
+                                    <param id="2" name="X">400</param>
+                                    <param id="3" name="Y">random(-16,656)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="723973862363907">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="287816348313198" type="System">
+                                    <param id="0" name="Variable">RightSpawner</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Create object" sid="456310882021403" type="System">
+                                    <param id="0" name="Object to create">BlueOrb</param>
+                                    <param id="1" name="Layer">1</param>
+                                    <param id="2" name="X">400</param>
+                                    <param id="3" name="Y">random(-16,656)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="499137756781370">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="132926194683047" type="System">
+                                    <param id="0" name="Variable">RightSpawner</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Create object" sid="965940194636511" type="System">
+                                    <param id="0" name="Object to create">YellowOrb</param>
+                                    <param id="1" name="Layer">1</param>
+                                    <param id="2" name="X">400</param>
+                                    <param id="3" name="Y">random(-16,656)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <comment>Bottom Spawner</comment>
+                <event-block sid="274496653967117">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="436238856280689" type="System">
+                            <param id="0" name="Interval (seconds)">floor(random(0,OrbFrequency))</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="871100573943635" type="System">
+                            <param id="0" name="Variable">BottomSpawner</param>
+                            <param id="1" name="Value">floor(random(0,4))</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="114488936176937">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="620403027002777" type="System">
+                                    <param id="0" name="Variable">BottomSpawner</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Create object" sid="300111725628708" type="System">
+                                    <param id="0" name="Object to create">RedOrb</param>
+                                    <param id="1" name="Layer">1</param>
+                                    <param id="2" name="X">random(-16,400)</param>
+                                    <param id="3" name="Y">656</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="999663010332374">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="921064541954548" type="System">
+                                    <param id="0" name="Variable">BottomSpawner</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Create object" sid="430270827880255" type="System">
+                                    <param id="0" name="Object to create">GreenOrb</param>
+                                    <param id="1" name="Layer">1</param>
+                                    <param id="2" name="X">random(-16,400)</param>
+                                    <param id="3" name="Y">656</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="545958568564463">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="985226117440121" type="System">
+                                    <param id="0" name="Variable">BottomSpawner</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Create object" sid="837969104440726" type="System">
+                                    <param id="0" name="Object to create">BlueOrb</param>
+                                    <param id="1" name="Layer">1</param>
+                                    <param id="2" name="X">random(-16,400)</param>
+                                    <param id="3" name="Y">656</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="466212758246227">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="294144196591871" type="System">
+                                    <param id="0" name="Variable">BottomSpawner</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Create object" sid="374450294728649" type="System">
+                                    <param id="0" name="Object to create">YellowOrb</param>
+                                    <param id="1" name="Layer">1</param>
+                                    <param id="2" name="X">random(-16,400)</param>
+                                    <param id="3" name="Y">656</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="675408613102978">
+            <conditions>
+                <condition id="-18" name="On created" sid="964262144102482" type="Orbs" />
+            </conditions>
+            <actions>
+                <action behavior="CustomMovement2" id="5" name="Accelerate toward position" sid="768842365785311" type="Orbs">
+                    <param id="0" name="Acceleration">OrbSpeed</param>
+                    <param id="1" name="X">Player.X</param>
+                    <param id="2" name="Y">Player.Y</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block any="1" sid="971637440658575">
+                    <conditions>
+                        <condition id="-1" name="Compare X" sid="786145228147566" type="Orbs">
+                            <param id="0" name="Comparison">2</param>
+                            <param id="1" name="X co-ordinate">0</param>
+                        </condition>
+                        <condition id="-1" name="Compare X" sid="693489564831483" type="Orbs">
+                            <param id="0" name="Comparison">4</param>
+                            <param id="1" name="X co-ordinate">384</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Sine" id="3" name="Set movement" sid="893057281387030" type="Orbs">
+                            <param id="0" name="Movement">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block any="1" sid="261057395376592">
+                    <conditions>
+                        <condition id="-2" name="Compare Y" sid="610235989086240" type="Orbs">
+                            <param id="0" name="Comparison">2</param>
+                            <param id="1" name="Y co-ordinate">0</param>
+                        </condition>
+                        <condition id="-1" name="Compare X" sid="909314998208403" type="Orbs">
+                            <param id="0" name="Comparison">4</param>
+                            <param id="1" name="X co-ordinate">640</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Sine" id="3" name="Set movement" sid="742505690294585" type="Orbs">
+                            <param id="0" name="Movement">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="762832671757052">
+            <conditions>
+                <condition id="17" name="On tap object" sid="418605180575390" type="Touch">
+                    <param id="0" name="Object">Orbs</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="487203057411368" type="Orbs" />
+            </actions>
+        </event-block>
+        <event-block sid="989818389859954">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="730497579887672" type="RedOrb">
+                    <param id="0" name="Object">MagicCircle</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="191349518041468" type="System">
+                    <param id="0" name="Variable">OrbCollision</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="597111445181689">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="590747020332515" type="GreenOrb">
+                    <param id="0" name="Object">MagicCircle</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="566754177734674" type="System">
+                    <param id="0" name="Variable">OrbCollision</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="310248339464133">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="746485875009073" type="BlueOrb">
+                    <param id="0" name="Object">MagicCircle</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="715399384034232" type="System">
+                    <param id="0" name="Variable">OrbCollision</param>
+                    <param id="1" name="Value">2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="920984807059588">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="725679739357697" type="YellowOrb">
+                    <param id="0" name="Object">MagicCircle</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="256805669655007" type="System">
+                    <param id="0" name="Variable">OrbCollision</param>
+                    <param id="1" name="Value">3</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="789682612621789">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="148988664630411" type="Orbs">
+                    <param id="0" name="Object">MagicCircle</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="450032238858537" type="Orbs" />
+            </actions>
+            <sub-events>
+                <event-block sid="843748579262127">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="693174109688401" type="System">
+                            <param id="0" name="Variable">OrbCollision</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">OrbSequence</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Rotate" id="0" name="Set speed" sid="709235953531029" type="MagicCircle">
+                            <param id="0" name="Speed">MagicCircle.Rotate.Speed+1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="604704358501172" type="System">
+                            <param id="0" name="Variable">OrbSequence</param>
+                            <param id="1" name="Value">floor(random(0,4))</param>
+                        </action>
+                        <action id="-28" name="Set effect parameter" sid="670706357903278" type="MagicCircle">
+                            <param id="0" name="Effect">&quot;GlowHorizontal&quot;</param>
+                            <param id="1" name="Parameter index">0</param>
+                            <param id="2" name="Value">MagicCircle.Rotate.Speed</param>
+                        </action>
+                        <action id="-28" name="Set effect parameter" sid="710165823558940" type="MagicCircle">
+                            <param id="0" name="Effect">&quot;GlowVertical&quot;</param>
+                            <param id="1" name="Parameter index">0</param>
+                            <param id="2" name="Value">MagicCircle.Rotate.Speed</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="510150224841776">
+                            <conditions>
+                                <condition id="-5" name="Compare width" sid="419841243372760" type="MagicCircle">
+                                    <param id="0" name="Comparison">2</param>
+                                    <param id="1" name="Width">330</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-7" name="Set size" sid="588299483735871" type="MagicCircle">
+                                    <param id="0" name="Width">MagicCircle.Width+1</param>
+                                    <param id="1" name="Height">MagicCircle.Height+1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="224179092601806">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="273802663581269" type="System" />
+                    </conditions>
+                    <actions>
+                        <action behavior="Rotate" id="0" name="Set speed" sid="655229358784280" type="MagicCircle">
+                            <param id="0" name="Speed">MagicCircle.Rotate.Speed-1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="358197510447131">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="966656805582949" type="System">
+                    <param id="0" name="Interval (seconds)">1.0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="441850301834513" type="System">
+                    <param id="0" name="Variable">Score</param>
+                    <param id="1" name="Value">MagicCircle.Rotate.Speed</param>
+                </action>
+                <action id="0" name="Set text" sid="875869327334938" type="Points">
+                    <param id="0" name="Text">Score</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="442735754850578">
+            <conditions>
+                <condition id="-18" name="On created" sid="985286767995491" type="Monster" />
+            </conditions>
+            <actions>
+                <action behavior="Pathfinding" id="0" name="Find path" sid="422207188826830" type="Monster">
+                    <param id="0" name="X">MagicCircle.X</param>
+                    <param id="1" name="Y">MagicCircle.Y</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="451499987884913">
+            <conditions>
+                <condition behavior="Pathfinding" id="0" name="On path found" sid="276394010051928" type="Monster" />
+            </conditions>
+            <actions>
+                <action behavior="Pathfinding" id="1" name="Move along path" sid="615190873534742" type="Monster" />
+            </actions>
+        </event-block>
+        <event-block sid="578281401570273">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="388503319119594" type="System">
+                    <param id="0" name="Interval (seconds)">floor(random(0,20))</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="439038675916764">
+                    <conditions>
+                        <condition id="-16" name="Pick random instance" sid="281414333864436" type="System">
+                            <param id="0" name="Object">MonsterSpawner</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="818512865831165" type="System">
+                            <param id="0" name="Object to create">Monster</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="X">MonsterSpawner.X</param>
+                            <param id="3" name="Y">MonsterSpawner.Y</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="321764555810498">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="249149454987015" type="Monster">
+                    <param id="0" name="Object">MagicCircle</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Pathfinding" id="2" name="Stop" sid="522560582086011" type="Monster" />
+            </actions>
+            <sub-events>
+                <event-block sid="797039765021085">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="971690962025705" type="System">
+                            <param id="0" name="Interval (seconds)">1.0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Set opacity" sid="104493144060361" type="MagicCircle">
+                            <param id="0" name="Opacity">MagicCircle.Opacity-1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="113227825410494">
+            <conditions>
+                <condition id="-10" name="Compare opacity" sid="852086325495062" type="MagicCircle">
+                    <param id="0" name="Comparison">3</param>
+                    <param id="1" name="Opacity">0</param>
+                </condition>
+            </conditions>
+            <actions />
+        </event-block>
+    </events>
+</c2eventsheet>
