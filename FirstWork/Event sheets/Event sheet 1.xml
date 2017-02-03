@@ -643,7 +643,7 @@
                             <param id="0" name="Visibility">1</param>
                         </action>
                         <action id="-15" name="Set visible" sid="481626051870081" type="HUDRedBar">
-                            <param id="0" name="Visibility">1</param>
+                            <param id="0" name="Visibility">0</param>
                         </action>
                         <action id="-15" name="Set visible" sid="462275232509531" type="HUDGreenBar">
                             <param id="0" name="Visibility">0</param>
@@ -874,6 +874,14 @@
                 </condition>
             </conditions>
             <actions />
+            <sub-events>
+                <event-block sid="236848270669144">
+                    <conditions>
+                        <condition id="-9" name="Is visible" sid="227605004454663" type="HUDRedOrb" />
+                    </conditions>
+                    <actions />
+                </event-block>
+            </sub-events>
         </event-block>
     </events>
 </c2eventsheet>
