@@ -19,12 +19,14 @@
         <plugin author="Scirra" id="shadowlight" version="1">Shadow Light</plugin>
     </used-plugins>
     <used-behaviors>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
         <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
         <behavior author="Scirra" id="Pathfinding" version="1">Pathfinding</behavior>
         <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
         <behavior author="Scirra" id="Rotate" version="1">Rotate</behavior>
         <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
         <behavior author="Scirra" id="custom" version="1">Custom Movement</behavior>
+        <behavior author="Scirra" id="destroy" version="1">Destroy outside layout</behavior>
         <behavior author="Scirra" id="solid" version="1">Solid</behavior>
     </used-behaviors>
     <used-effects>
@@ -83,7 +85,7 @@
             </instance-variables>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="378363355033066" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Taymon\Downloads\orbs.png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -173,7 +175,7 @@
             </instance-variables>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="368776644349532" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Taymon\Downloads\orbs.png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -184,7 +186,7 @@
             </instance-variables>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="839377757702211" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Taymon\Downloads\orbs.png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -195,7 +197,7 @@
             </instance-variables>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="281793079505966" speed="5">
-                    <frame duration="1" hotspotX="0.617647" hotspotY="0.617647" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Taymon\Downloads\orbs.png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -207,14 +209,7 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="279310421199216" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.507692">
-                        <collision-poly>
-                            <point x="0.242424" y="0.246154" />
-                            <point x="0.757576" y="0.246154" />
-                            <point x="0.757576" y="0.769231" />
-                            <point x="0.242424" y="0.769231" />
-                        </collision-poly>
-                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Taymon\Downloads\orbs.png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -222,14 +217,7 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="186769838612017" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
-                        <collision-poly>
-                            <point x="0.242424" y="0.242424" />
-                            <point x="0.757576" y="0.242424" />
-                            <point x="0.757576" y="0.757576" />
-                            <point x="0.242424" y="0.757576" />
-                        </collision-poly>
-                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Taymon\Downloads\orbs.png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -237,14 +225,7 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="715387187263968" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.507692">
-                        <collision-poly>
-                            <point x="0.242424" y="0.246154" />
-                            <point x="0.757576" y="0.246154" />
-                            <point x="0.757576" y="0.769231" />
-                            <point x="0.242424" y="0.769231" />
-                        </collision-poly>
-                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Taymon\Downloads\orbs.png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -252,14 +233,7 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="318041762668918" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
-                        <collision-poly>
-                            <point x="0.242424" y="0.234375" />
-                            <point x="0.757576" y="0.234375" />
-                            <point x="0.757576" y="0.765625" />
-                            <point x="0.242424" y="0.765625" />
-                        </collision-poly>
-                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Taymon\Downloads\orbs.png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -286,6 +260,9 @@
             <behaviors>
                 <behavior-type name="Pathfinding" sid="286756409628621">
                     <behavior id="Pathfinding" />
+                </behavior-type>
+                <behavior-type name="Fade" sid="844163770819060">
+                    <behavior id="Fade" />
                 </behavior-type>
             </behaviors>
             <animation-folder>
@@ -418,6 +395,14 @@
         </object-type>
         <object-type name="FireBall" sid="495374476634668">
             <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="DestroyOutsideLayout" sid="231718333057120">
+                    <behavior id="destroy" />
+                </behavior-type>
+                <behavior-type name="Bullet" sid="941635403921430">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
                 <animation framecount="8" loop="0" name="Left" pingpong="0" repeatcount="1" repeatto="0" sid="910522301821037" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.526316" />
@@ -498,6 +483,22 @@
                     <frame duration="1" hotspotX="0.489362" hotspotY="0.483871" />
                     <frame duration="1" hotspotX="0.488889" hotspotY="0.466667" />
                     <frame duration="1" hotspotX="0.478261" hotspotY="0.46875" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Trunk" sid="984974984192210">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="531937370551701">
+                    <behavior id="Bullet" />
+                </behavior-type>
+                <behavior-type name="DestroyOutsideLayout" sid="238455561147143">
+                    <behavior id="destroy" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="561108173924022" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.52381" original-source="C:\Users\Taymon\Downloads\trunk.png" />
                 </animation>
             </animation-folder>
         </object-type>
