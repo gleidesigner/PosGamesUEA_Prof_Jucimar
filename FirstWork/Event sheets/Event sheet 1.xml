@@ -955,8 +955,8 @@
         <event-block sid="510789496462415">
             <conditions>
                 <condition id="-13" name="Is between angles" sid="917875066950284" type="FireBall">
-                    <param id="0" name="First angle">0</param>
-                    <param id="1" name="Second angle">45</param>
+                    <param id="0" name="First angle">337.5</param>
+                    <param id="1" name="Second angle">22.5</param>
                 </condition>
             </conditions>
             <actions>
@@ -973,8 +973,8 @@
         <event-block sid="995681395294702">
             <conditions>
                 <condition id="-13" name="Is between angles" sid="111735660277307" type="FireBall">
-                    <param id="0" name="First angle">45</param>
-                    <param id="1" name="Second angle">90</param>
+                    <param id="0" name="First angle">22.5</param>
+                    <param id="1" name="Second angle">67.5</param>
                 </condition>
             </conditions>
             <actions>
@@ -991,8 +991,8 @@
         <event-block sid="497464596030209">
             <conditions>
                 <condition id="-13" name="Is between angles" sid="524602805566323" type="FireBall">
-                    <param id="0" name="First angle">90</param>
-                    <param id="1" name="Second angle">135</param>
+                    <param id="0" name="First angle">67.5</param>
+                    <param id="1" name="Second angle">112.5</param>
                 </condition>
             </conditions>
             <actions>
@@ -1009,8 +1009,8 @@
         <event-block sid="573990227201974">
             <conditions>
                 <condition id="-13" name="Is between angles" sid="917292033505381" type="FireBall">
-                    <param id="0" name="First angle">135</param>
-                    <param id="1" name="Second angle">180</param>
+                    <param id="0" name="First angle">112.5</param>
+                    <param id="1" name="Second angle">157.5</param>
                 </condition>
             </conditions>
             <actions>
@@ -1027,8 +1027,8 @@
         <event-block sid="773819435115346">
             <conditions>
                 <condition id="-13" name="Is between angles" sid="866866016712522" type="FireBall">
-                    <param id="0" name="First angle">180</param>
-                    <param id="1" name="Second angle">225</param>
+                    <param id="0" name="First angle">157.5</param>
+                    <param id="1" name="Second angle">202.5</param>
                 </condition>
             </conditions>
             <actions>
@@ -1045,8 +1045,8 @@
         <event-block sid="882895979007663">
             <conditions>
                 <condition id="-13" name="Is between angles" sid="800786654093420" type="FireBall">
-                    <param id="0" name="First angle">225</param>
-                    <param id="1" name="Second angle">270</param>
+                    <param id="0" name="First angle">202.5</param>
+                    <param id="1" name="Second angle">247.5</param>
                 </condition>
             </conditions>
             <actions>
