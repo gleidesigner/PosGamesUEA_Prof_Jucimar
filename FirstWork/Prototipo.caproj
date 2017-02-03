@@ -90,7 +90,35 @@
         <object-type name="Player" sid="141901324043641">
             <plugin id="Sprite" />
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="612134298521535" speed="5">
+                <animation framecount="5" loop="1" name="Idle" pingpong="0" repeatcount="1" repeatto="0" sid="612134298521535" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+                <animation framecount="1" loop="0" name="Right" pingpong="0" repeatcount="1" repeatto="0" sid="526331362715521" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+                <animation framecount="1" loop="0" name="RDown" pingpong="0" repeatcount="1" repeatto="0" sid="174210023752750" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+                <animation framecount="1" loop="0" name="Down" pingpong="0" repeatcount="1" repeatto="0" sid="707113097843102" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+                <animation framecount="1" loop="0" name="LDown" pingpong="0" repeatcount="1" repeatto="0" sid="773622330426687" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+                <animation framecount="1" loop="0" name="Left" pingpong="0" repeatcount="1" repeatto="0" sid="584128317585144" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+                <animation framecount="1" loop="0" name="LUp" pingpong="0" repeatcount="1" repeatto="0" sid="510577687636428" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+                <animation framecount="1" loop="0" name="Up" pingpong="0" repeatcount="1" repeatto="0" sid="976683479280047" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+                <animation framecount="1" loop="0" name="RUp" pingpong="0" repeatcount="1" repeatto="0" sid="306838482739311" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
             </animation-folder>
@@ -156,7 +184,7 @@
             </instance-variables>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="839377757702211" speed="5">
-                    <frame duration="1" hotspotX="0.617647" hotspotY="0.617647" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -179,7 +207,14 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="279310421199216" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.507692">
+                        <collision-poly>
+                            <point x="0.242424" y="0.246154" />
+                            <point x="0.757576" y="0.246154" />
+                            <point x="0.757576" y="0.769231" />
+                            <point x="0.242424" y="0.769231" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
@@ -187,7 +222,14 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="186769838612017" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.242424" y="0.242424" />
+                            <point x="0.757576" y="0.242424" />
+                            <point x="0.757576" y="0.757576" />
+                            <point x="0.242424" y="0.757576" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
@@ -195,7 +237,14 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="715387187263968" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.507692">
+                        <collision-poly>
+                            <point x="0.242424" y="0.246154" />
+                            <point x="0.757576" y="0.246154" />
+                            <point x="0.757576" y="0.769231" />
+                            <point x="0.242424" y="0.769231" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
@@ -203,7 +252,14 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="318041762668918" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.242424" y="0.234375" />
+                            <point x="0.757576" y="0.234375" />
+                            <point x="0.757576" y="0.765625" />
+                            <point x="0.242424" y="0.765625" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
@@ -251,20 +307,11 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="HUDbars" sid="959769133865297">
+        <object-type name="HUDBars" sid="959769133865297">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="231728435801692" speed="5">
-                    <frame duration="1" hotspotX="0.735974" hotspotY="-0.0859375" original-source="C:\Users\Taymon\Downloads\Hud_0_0.png">
-                        <collision-poly>
-                            <point x="0.0429043" y="0" />
-                            <point x="0.735974" y="0" />
-                            <point x="1" y="0" />
-                            <point x="0.927393" y="0" />
-                            <point x="0.735974" y="0.9375" />
-                            <point x="0.0561056" y="0.828125" />
-                        </collision-poly>
-                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.47449" original-source="C:\Users\Taymon\Downloads\hud v2-1.png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -305,6 +352,67 @@
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="454363484655634" speed="5">
                     <frame duration="1" hotspotX="0.483871" hotspotY="0.564516" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="HUDRedBar" sid="222410578789611">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="475208551129615" speed="5">
+                    <frame duration="1" hotspotX="0.48" hotspotY="0.473684" original-source="C:\Users\Taymon\Downloads\hud v2-1.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="0" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="HUDYellowBar" sid="629847295915136">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="631095410346052" speed="5">
+                    <frame duration="1" hotspotX="0.492063" hotspotY="0.571429" original-source="C:\Users\Taymon\Downloads\hud v2-1.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="HUDBlueBar" sid="472158388370776">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="374986401875535" speed="5">
+                    <frame duration="1" hotspotX="-2.39683" hotspotY="8.57143" original-source="C:\Users\Taymon\Downloads\hud v2-1.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="0" y="0.400697" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="HUDGreenBar" sid="737601551042653">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="299873190571464" speed="5">
+                    <frame duration="1" hotspotX="0.031746" hotspotY="0.571429" original-source="C:\Users\Taymon\Downloads\hud v2-1.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="0" y="0" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite" sid="375868901832762">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="247831346922287" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
             </animation-folder>
         </object-type>

@@ -523,6 +523,140 @@
             <actions>
                 <action id="-9" name="Destroy" sid="487203057411368" type="Orbs" />
             </actions>
+            <sub-events>
+                <event-block sid="911386969481020">
+                    <conditions>
+                        <condition id="4" name="Is touching object" sid="227378403118359" type="Touch">
+                            <param id="0" name="Object">RedOrb</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="244073806782796" type="HUDRedOrb">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="323509061439760" type="HUDBlueOrb">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="288665641988417" type="HUDGreenOrb">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="808696380985268" type="HUDYellowOrb">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="280678962627544" type="HUDRedBar">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="639747095020030" type="HUDGreenBar">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="568535706672976" type="HUDBlueBar">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="470220992537263" type="HUDYellowBar">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="256666441530957">
+                    <conditions>
+                        <condition id="4" name="Is touching object" sid="280722484353151" type="Touch">
+                            <param id="0" name="Object">GreenOrb</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="898609986749631" type="HUDRedOrb">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="520899052328102" type="HUDBlueOrb">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="515589875389189" type="HUDGreenOrb">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="422000947162033" type="HUDYellowOrb">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="918190834805628" type="HUDRedBar">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="280647309708221" type="HUDGreenBar">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="632778248381500" type="HUDBlueBar">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="760610246737190" type="HUDYellowBar">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="599682405946368">
+                    <conditions>
+                        <condition id="4" name="Is touching object" sid="715324050328222" type="Touch">
+                            <param id="0" name="Object">BlueOrb</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="107499867080589" type="HUDRedOrb">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="634187492640186" type="HUDBlueOrb">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="672666441051002" type="HUDGreenOrb">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="570538119797801" type="HUDYellowOrb">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="260042341732495" type="HUDRedBar">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="848067573809503" type="HUDGreenBar">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="324327841484392" type="HUDBlueBar">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="894799534945106" type="HUDYellowBar">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="571427805616371">
+                    <conditions>
+                        <condition id="4" name="Is touching object" sid="201879721793012" type="Touch">
+                            <param id="0" name="Object">YellowOrb</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="836798611602784" type="HUDRedOrb">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="813827388974947" type="HUDBlueOrb">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="654874971660944" type="HUDGreenOrb">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="774544171582063" type="HUDYellowOrb">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="481626051870081" type="HUDRedBar">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="462275232509531" type="HUDGreenBar">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="111173266839010" type="HUDBlueBar">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="327035164599260" type="HUDYellowBar">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
         <event-block sid="989818389859954">
             <conditions>
@@ -729,6 +863,14 @@
                 <condition id="-10" name="Compare opacity" sid="852086325495062" type="MagicCircle">
                     <param id="0" name="Comparison">3</param>
                     <param id="1" name="Opacity">0</param>
+                </condition>
+            </conditions>
+            <actions />
+        </event-block>
+        <event-block sid="223438097545445">
+            <conditions>
+                <condition id="17" name="On tap object" sid="643831338626813" type="Touch">
+                    <param id="0" name="Object">Monster</param>
                 </condition>
             </conditions>
             <actions />
