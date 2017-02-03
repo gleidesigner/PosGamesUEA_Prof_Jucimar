@@ -881,6 +881,24 @@
                     </conditions>
                     <actions />
                 </event-block>
+                <event-block sid="902987950056478">
+                    <conditions>
+                        <condition id="-9" name="Is visible" sid="772395879551581" type="HUDGreenOrb" />
+                    </conditions>
+                    <actions />
+                </event-block>
+                <event-block sid="797156214047788">
+                    <conditions>
+                        <condition id="-9" name="Is visible" sid="714401432751992" type="HUDBlueOrb" />
+                    </conditions>
+                    <actions />
+                </event-block>
+                <event-block sid="947921507920802">
+                    <conditions>
+                        <condition id="-9" name="Is visible" sid="398359488163144" type="HUDYellowOrb" />
+                    </conditions>
+                    <actions />
+                </event-block>
             </sub-events>
         </event-block>
     </events>

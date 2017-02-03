@@ -593,6 +593,28 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
+                <instance type="FireBall" uid="26">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>428.752319336</x>
+                        <y>404.989105225</y>
+                        <z>0</z>
+                        <width>58</width>
+                        <height>19</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.526315808</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
             </instances>
             <effects />
         </layer>
@@ -715,10 +737,10 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>242.884338379</x>
-                        <y>587.265991211</y>
+                        <x>192.36390686</x>
+                        <y>584.444091797</y>
                         <z>0</z>
-                        <width>120.702148438</width>
+                        <width>126.911132813</width>
                         <height>50.561523438</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
@@ -742,10 +764,10 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>287.841369629</x>
+                        <x>288.405670166</x>
                         <y>578.374450684</y>
                         <z>0</z>
-                        <width>187.637405396</width>
+                        <width>188.76600647</width>
                         <height>41.270202637</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
