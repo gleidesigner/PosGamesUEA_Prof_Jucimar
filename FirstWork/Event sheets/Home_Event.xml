@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Home_Event</name>
+    <events>
+        <event-group description="" sid="536073029494301" title="StarHome">
+            <sub-events>
+                <event-block sid="777702700274388">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="686813234108573" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Wait" sid="460438825457565" type="System">
+                            <param id="0" name="Seconds">1.0</param>
+                        </action>
+                        <action behavior="Fade1" id="1" name="Start fade" sid="801520132674057" type="Menu" />
+                        <action id="-15" name="Set visible" sid="914501732446948" type="Menu">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="870834250389264" type="System">
+                            <param id="0" name="Seconds">1.0</param>
+                        </action>
+                        <action behavior="Fade1" id="1" name="Start fade" sid="767678296136575" type="BtnAll" />
+                        <action id="-15" name="Set visible" sid="432106613027681" type="BtnAll">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="193416792984835" title="Menu" />
+        <event-block sid="996005158252856">
+            <conditions>
+                <condition id="17" name="On tap object" sid="939624660588978" type="Touch">
+                    <param id="0" name="Object">BtnStart</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="482195098527379" type="System">
+                    <param id="0" name="Seconds">0.0</param>
+                </action>
+                <action id="0" name="Play" sid="317903811534581" type="Audio">
+                    <param id="0" name="Audio file">snap2</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action behavior="Fade2" id="1" name="Start fade" sid="428614639971826" type="BtnAll" />
+                <action id="-16" name="Wait" sid="250255808738235" type="System">
+                    <param id="0" name="Seconds">1.0</param>
+                </action>
+                <action behavior="Fade2" id="1" name="Start fade" sid="934012689733043" type="Menu" />
+                <action id="-16" name="Wait" sid="601854820474034" type="System">
+                    <param id="0" name="Seconds">1.0</param>
+                </action>
+                <action id="33" name="Stop all" sid="416590935002983" type="Audio" />
+                <action id="-2" name="Go to layout" sid="833378301662113" type="System">
+                    <param id="0" name="Layout">Layout 1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="744971109902127">
+            <conditions>
+                <condition id="17" name="On tap object" sid="951106701182039" type="Touch">
+                    <param id="0" name="Object">BtnCredit</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="211326624043546" type="System">
+                    <param id="0" name="Seconds">0.0</param>
+                </action>
+                <action id="0" name="Play" sid="115105592373056" type="Audio">
+                    <param id="0" name="Audio file">snap2</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action behavior="Fade2" id="1" name="Start fade" sid="380237975476270" type="BtnAll" />
+                <action id="-16" name="Wait" sid="575861688209946" type="System">
+                    <param id="0" name="Seconds">1.0</param>
+                </action>
+                <action behavior="Fade2" id="1" name="Start fade" sid="253398687978183" type="Menu" />
+                <action id="-16" name="Wait" sid="413070654233193" type="System">
+                    <param id="0" name="Seconds">1.0</param>
+                </action>
+                <action id="33" name="Stop all" sid="950226304133366" type="Audio" />
+                <action id="-2" name="Go to layout" sid="954954021287949" type="System">
+                    <param id="0" name="Layout">Credit_Layout</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

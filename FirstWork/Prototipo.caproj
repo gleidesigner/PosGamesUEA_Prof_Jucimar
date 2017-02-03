@@ -10,6 +10,7 @@
     <unique-id>kb7ceyo328hr</unique-id>
     <saved-with-version>24200</saved-with-version>
     <used-plugins>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
         <plugin author="Scirra" id="Particles" version="1">Particles</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Spritefont2" version="1">Sprite font</plugin>
@@ -385,11 +386,144 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite" sid="375868901832762">
+        <object-type name="Transition" sid="888019404400872">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Fade" sid="385190840325016">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="537249080314709" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\Gleides\Pictures\Assets_Games\1080x1920_Layout2.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BtnStart" sid="589589154086343">
             <plugin id="Sprite" />
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="247831346922287" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="524265448002707" speed="5">
+                    <frame duration="1" hotspotX="0.416667" hotspotY="0.5" original-source="C:\Users\Gleides\Pictures\Assets_Games\onscreencontrols\Sprites\shadedDark\shadedDark16.png">
+                        <collision-poly>
+                            <point x="0.0152778" y="0.151496" />
+                            <point x="0.419872" y="0.00213675" />
+                            <point x="0.824466" y="0.151496" />
+                            <point x="0.997863" y="0.5" />
+                            <point x="0.824466" y="0.848504" />
+                            <point x="0.419872" y="0.997863" />
+                            <point x="0.0152778" y="0.848504" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BtnCredit" sid="585513972357996">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="650442024531133" speed="5">
+                    <frame duration="1" hotspotX="0.526786" hotspotY="0.466667" original-source="C:\Users\Gleides\Pictures\Assets_Games\Assets\Botoes5.png">
+                        <collision-poly>
+                            <point x="0.160121" y="0.0663306" />
+                            <point x="0.524292" y="0" />
+                            <point x="0.888462" y="0.0663306" />
+                            <point x="1" y="0.465726" />
+                            <point x="0.888462" y="0.865121" />
+                            <point x="0.524292" y="1" />
+                            <point x="0.160121" y="0.865121" />
+                            <point x="0.00404858" y="0.465726" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Menu" sid="254736070039926">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Fade1" sid="387422846221429">
+                    <behavior id="Fade" />
+                </behavior-type>
+                <behavior-type name="Fade2" sid="630425773545299">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="340586318236532" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\Gleides\Google Drive\Tap Game\Sprites\Home-03.png">
+                        <collision-poly>
+                            <point x="0.175" y="0.405263" />
+                            <point x="0.5" y="0.0578947" />
+                            <point x="0.838636" y="0.373684" />
+                            <point x="0.922727" y="0.5" />
+                            <point x="0.977273" y="0.947368" />
+                            <point x="0.5" y="0.952632" />
+                            <point x="0.0431818" y="0.9" />
+                            <point x="0.0227273" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BtnAll" sid="432982701140836">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Fade1" sid="612209200090582">
+                    <behavior id="Fade" />
+                </behavior-type>
+                <behavior-type name="Fade2" sid="382389197327055">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="926616059624931" speed="5">
+                    <frame duration="1" hotspotX="0.504032" hotspotY="0.905797" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Audio" sid="583238621395541">
+            <plugin id="Audio" />
+        </object-type>
+        <object-type name="TxtCredit" sid="135498940192942">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Fade1" sid="831265801783387">
+                    <behavior id="Fade" />
+                </behavior-type>
+                <behavior-type name="Fade2" sid="270004911001721">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="779227256649088" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\Gleides\Pictures\Assets_Games\Assets\creditos - time.png">
+                        <collision-poly>
+                            <point x="0.464373" y="0.273319" />
+                            <point x="0.5" y="0.000723066" />
+                            <point x="0.689189" y="0.182936" />
+                            <point x="0.97543" y="0.985539" />
+                            <point x="0.5" y="1" />
+                            <point x="0.02457" y="0.985539" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BtnBackHome" sid="946229535763891">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="977772600799915" speed="5">
+                    <frame duration="1" hotspotX="0.513393" hotspotY="0.513393" original-source="C:\Users\Gleides\Pictures\Assets_Games\Assets\Botoes4.png">
+                        <collision-poly>
+                            <point x="0.15" y="0.15" />
+                            <point x="0.5" y="0" />
+                            <point x="0.85" y="0.15" />
+                            <point x="1" y="0.5" />
+                            <point x="0.85" y="0.85" />
+                            <point x="0.5" y="1" />
+                            <point x="0.15" y="0.85" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
@@ -689,9 +823,13 @@
     </families>
     <layout-folder>
         <layout>Layout 1.xml</layout>
+        <layout>Home_Layout.xml</layout>
+        <layout>Credit_Layout.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>Event sheet 1.xml</event-sheet>
+        <event-sheet>Home_Event.xml</event-sheet>
+        <event-sheet>Credit_Event.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Touch" uid="0">
@@ -699,8 +837,24 @@
                 <use-mouse-input>Yes</use-mouse-input>
             </properties>
         </global-instance>
+        <global-instance type="Audio" uid="31">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>All</saveload>
+                <play-in-background>No</play-in-background>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+            </properties>
+        </global-instance>
     </global-instances>
-    <sounds-folder />
+    <sounds-folder>
+        <file name="snap2.ogg" />
+    </sounds-folder>
     <music-folder />
     <files-folder>
         <file-folder name="Icons">
