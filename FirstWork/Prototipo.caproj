@@ -396,10 +396,10 @@
         <object-type name="FireBall" sid="495374476634668">
             <plugin id="Sprite" />
             <behaviors>
-                <behavior-type name="DestroyOutsideLayout" sid="231718333057120">
+                <behavior-type name="DestroyOutsideLayout" sid="660918754069730">
                     <behavior id="destroy" />
                 </behavior-type>
-                <behavior-type name="Bullet" sid="941635403921430">
+                <behavior-type name="Bullet" sid="968375771117330">
                     <behavior id="Bullet" />
                 </behavior-type>
             </behaviors>
@@ -489,16 +489,147 @@
         <object-type name="Trunk" sid="984974984192210">
             <plugin id="Sprite" />
             <behaviors>
-                <behavior-type name="Bullet" sid="531937370551701">
-                    <behavior id="Bullet" />
-                </behavior-type>
-                <behavior-type name="DestroyOutsideLayout" sid="238455561147143">
+                <behavior-type name="DestroyOutsideLayout" sid="565626572391972">
                     <behavior id="destroy" />
+                </behavior-type>
+                <behavior-type name="Bullet" sid="355716692804744">
+                    <behavior id="Bullet" />
                 </behavior-type>
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="561108173924022" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.52381" original-source="C:\Users\Taymon\Downloads\trunk.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Icicle" sid="174774693924335">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="DestroyOutsideLayout" sid="628680834298709">
+                    <behavior id="destroy" />
+                </behavior-type>
+                <behavior-type name="Bullet" sid="997193380418202">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="8" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="251744237278441" speed="5">
+                    <frame duration="1" hotspotX="0.484848" hotspotY="0.470588" />
+                    <frame duration="1" hotspotX="0.484848" hotspotY="0.444444" />
+                    <frame duration="1" hotspotX="0.492308" hotspotY="0.470588" />
+                    <frame duration="1" hotspotX="0.484848" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.484848" hotspotY="0.470588" />
+                    <frame duration="1" hotspotX="0.484848" hotspotY="0.470588" />
+                    <frame duration="1" hotspotX="0.484848" hotspotY="0.470588" />
+                    <frame duration="1" hotspotX="0.484848" hotspotY="0.473684" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Shock" sid="768836281781326">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Fade" sid="791140815592376">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="4" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="858477613371204" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="AirSkull" sid="209007454098465">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="4" loop="0" name="Right" pingpong="0" repeatcount="1" repeatto="0" sid="532787468749279" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.492308" />
+                    <frame duration="1" hotspotX="0.513514" hotspotY="0.492063" />
+                    <frame duration="1" hotspotX="0.512821" hotspotY="0.492308" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.492308" />
+                </animation>
+                <animation framecount="4" loop="0" name="Down" pingpong="0" repeatcount="1" repeatto="0" sid="667429641406615" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.492308" />
+                    <frame duration="1" hotspotX="0.513514" hotspotY="0.492063" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.492308" />
+                    <frame duration="1" hotspotX="0.512821" hotspotY="0.492308" />
+                </animation>
+                <animation framecount="4" loop="0" name="Up" pingpong="0" repeatcount="1" repeatto="0" sid="338205930908522" speed="5">
+                    <frame duration="1" hotspotX="0.513514" hotspotY="0.492063" />
+                    <frame duration="1" hotspotX="0.526316" hotspotY="0.492308" />
+                    <frame duration="1" hotspotX="0.512821" hotspotY="0.492308" />
+                    <frame duration="1" hotspotX="0.526316" hotspotY="0.492308" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="IceSkull" sid="835120650410133">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="4" loop="0" name="Down" pingpong="0" repeatcount="1" repeatto="0" sid="835007904582524" speed="5">
+                    <frame duration="1" hotspotX="0.486486" hotspotY="0.539683" />
+                    <frame duration="1" hotspotX="0.473684" hotspotY="0.538462" />
+                    <frame duration="1" hotspotX="0.487179" hotspotY="0.538462" />
+                    <frame duration="1" hotspotX="0.473684" hotspotY="0.538462" />
+                </animation>
+                <animation framecount="4" loop="0" name="Right" pingpong="0" repeatcount="1" repeatto="0" sid="909265668003086" speed="5">
+                    <frame duration="1" hotspotX="0.486486" hotspotY="0.507937" />
+                    <frame duration="1" hotspotX="0.473684" hotspotY="0.507692" />
+                    <frame duration="1" hotspotX="0.487179" hotspotY="0.507692" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.507692" />
+                </animation>
+                <animation framecount="4" loop="0" name="Up" pingpong="0" repeatcount="1" repeatto="0" sid="677169436442248" speed="5">
+                    <frame duration="1" hotspotX="0.513514" hotspotY="0.539683" />
+                    <frame duration="1" hotspotX="0.526316" hotspotY="0.538462" />
+                    <frame duration="1" hotspotX="0.512821" hotspotY="0.538462" />
+                    <frame duration="1" hotspotX="0.526316" hotspotY="0.538462" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="EarthSkull" sid="840767819299272">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="4" loop="0" name="Down" pingpong="0" repeatcount="1" repeatto="0" sid="853801498987353" speed="5">
+                    <frame duration="1" hotspotX="0.486486" hotspotY="0.507937" />
+                    <frame duration="1" hotspotX="0.473684" hotspotY="0.507692" />
+                    <frame duration="1" hotspotX="0.487179" hotspotY="0.507692" />
+                    <frame duration="1" hotspotX="0.473684" hotspotY="0.507692" />
+                </animation>
+                <animation framecount="4" loop="0" name="Right" pingpong="0" repeatcount="1" repeatto="0" sid="868353451020122" speed="5">
+                    <frame duration="1" hotspotX="0.486486" hotspotY="0.507937" />
+                    <frame duration="1" hotspotX="0.473684" hotspotY="0.507692" />
+                    <frame duration="1" hotspotX="0.487179" hotspotY="0.507692" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.507692" />
+                </animation>
+                <animation framecount="4" loop="0" name="Up" pingpong="0" repeatcount="1" repeatto="0" sid="828454416496209" speed="5">
+                    <frame duration="1" hotspotX="0.513514" hotspotY="0.507937" />
+                    <frame duration="1" hotspotX="0.526316" hotspotY="0.507692" />
+                    <frame duration="1" hotspotX="0.512821" hotspotY="0.507692" />
+                    <frame duration="1" hotspotX="0.526316" hotspotY="0.507692" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="FireSkull" sid="829912377728463">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="4" loop="0" name="Down" pingpong="0" repeatcount="1" repeatto="0" sid="659629760721611" speed="5">
+                    <frame duration="1" hotspotX="0.513514" hotspotY="0.507937" />
+                    <frame duration="1" hotspotX="0.526316" hotspotY="0.507692" />
+                    <frame duration="1" hotspotX="0.512821" hotspotY="0.507692" />
+                    <frame duration="1" hotspotX="0.526316" hotspotY="0.507692" />
+                </animation>
+                <animation framecount="4" loop="0" name="Right" pingpong="0" repeatcount="1" repeatto="0" sid="639339745800979" speed="5">
+                    <frame duration="1" hotspotX="0.486486" hotspotY="0.507937" />
+                    <frame duration="1" hotspotX="0.473684" hotspotY="0.507692" />
+                    <frame duration="1" hotspotX="0.487179" hotspotY="0.507692" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.507692" />
+                </animation>
+                <animation framecount="4" loop="0" name="Up" pingpong="0" repeatcount="1" repeatto="0" sid="235020193256412" speed="5">
+                    <frame duration="1" hotspotX="0.486486" hotspotY="0.507937" />
+                    <frame duration="1" hotspotX="0.473684" hotspotY="0.507692" />
+                    <frame duration="1" hotspotX="0.487179" hotspotY="0.507692" />
+                    <frame duration="1" hotspotX="0.473684" hotspotY="0.507692" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -524,6 +655,36 @@
                     <effect id="sphere" />
                 </effect-type>
             </effects>
+        </family>
+        <family name="Spells" plugin-id="Sprite" sid="649470718778405">
+            <members>
+                <member>FireBall</member>
+                <member>Icicle</member>
+                <member>Shock</member>
+                <member>Trunk</member>
+            </members>
+        </family>
+        <family name="Monsters" plugin-id="Sprite" sid="968170931524643">
+            <members>
+                <member>AirSkull</member>
+                <member>EarthSkull</member>
+                <member>FireSkull</member>
+                <member>IceSkull</member>
+            </members>
+            <instance-variables>
+                <instance-variable name="Type" sid="852435611191448" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Pathfinding" sid="649732410291407">
+                    <behavior id="Pathfinding" />
+                </behavior-type>
+                <behavior-type name="Fade" sid="808460782806525">
+                    <behavior id="Fade" />
+                </behavior-type>
+                <behavior-type name="Solid" sid="557733031752479">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
         </family>
     </families>
     <layout-folder>

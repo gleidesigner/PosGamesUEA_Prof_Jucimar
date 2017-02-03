@@ -10,8 +10,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout active="1" order="0">Layout 1</layout>
-        <event-sheet order="1">Event sheet 1</event-sheet>
+        <layout order="0">Layout 1</layout>
+        <event-sheet active="1" order="1">Event sheet 1</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -20,7 +20,9 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <property expanded="1" name="Configuration Settings" />
     </properties>
     <families-expanded root="1">
-        <family expanded="1" name="Orbs" />
+        <family expanded="0" name="Orbs" />
+        <family expanded="0" name="Spells" />
+        <family expanded="0" name="Monsters" />
     </families-expanded>
     <folders-expanded>
         <folder expanded="1" path="object-folder/" />
@@ -54,5 +56,11 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Sprite/" />
         <folder expanded="1" path="animation-folder/FireBall/" />
         <folder expanded="1" path="animation-folder/Trunk/" />
+        <folder expanded="1" path="animation-folder/Icicle/" />
+        <folder expanded="1" path="animation-folder/Shock/" />
+        <folder expanded="1" path="animation-folder/AirSkull/" />
+        <folder expanded="1" path="animation-folder/IceSkull/" />
+        <folder expanded="1" path="animation-folder/EarthSkull/" />
+        <folder expanded="1" path="animation-folder/FireSkull/" />
     </folders-expanded>
 </c2uistate>
