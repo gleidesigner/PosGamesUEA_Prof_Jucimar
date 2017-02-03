@@ -8,7 +8,7 @@
     <author-website>http://</author-website>
     <app-id>com.mycompany.myapp</app-id>
     <unique-id>kb7ceyo328hr</unique-id>
-    <saved-with-version>24100</saved-with-version>
+    <saved-with-version>24200</saved-with-version>
     <used-plugins>
         <plugin author="Scirra" id="Particles" version="1">Particles</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
@@ -16,9 +16,12 @@
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
         <plugin author="Scirra" id="Tilemap" version="1">Tilemap</plugin>
         <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
+        <plugin author="Scirra" id="shadowlight" version="1">Shadow Light</plugin>
     </used-plugins>
     <used-behaviors>
+        <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
         <behavior author="Scirra" id="Pathfinding" version="1">Pathfinding</behavior>
+        <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
         <behavior author="Scirra" id="Rotate" version="1">Rotate</behavior>
         <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
         <behavior author="Scirra" id="custom" version="1">Custom Movement</behavior>
@@ -27,6 +30,8 @@
     <used-effects>
         <effect author="Scirra" id="glowhorizontal">Glow Horizontal</effect>
         <effect author="Scirra" id="glowvertical">Glow Vertical</effect>
+        <effect author="Scirra" id="hueblend">Hue</effect>
+        <effect author="Danguafer/Silexars" id="pulse">Pulse</effect>
         <effect author="Scirra" id="setcolor">Set color</effect>
         <effect author="Brad Larson" id="sphere">Sphere</effect>
     </used-effects>
@@ -260,6 +265,46 @@
                             <point x="0.0561056" y="0.828125" />
                         </collision-poly>
                     </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ShadowLight" sid="484340962599186">
+            <plugin id="shadowlight" />
+        </object-type>
+        <object-type name="CircleLight" sid="839076243896884">
+            <plugin id="Sprite" />
+            <effects>
+                <effect-type name="Pulse">
+                    <effect id="pulse" />
+                </effect-type>
+            </effects>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="324480295530920" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.488" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="PointLight" sid="317310390022251">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="434817926799148">
+                    <behavior id="Pin" />
+                </behavior-type>
+                <behavior-type name="Fade" sid="183074198014584">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <effects>
+                <effect-type name="Hue">
+                    <effect id="hueblend" />
+                </effect-type>
+                <effect-type name="Pulse">
+                    <effect id="pulse" />
+                </effect-type>
+            </effects>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="454363484655634" speed="5">
+                    <frame duration="1" hotspotX="0.483871" hotspotY="0.564516" />
                 </animation>
             </animation-folder>
         </object-type>

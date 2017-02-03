@@ -466,6 +466,16 @@
                     <param id="1" name="X">Player.X</param>
                     <param id="2" name="Y">Player.Y</param>
                 </action>
+                <action id="-3" name="Create object" sid="509952749370169" type="System">
+                    <param id="0" name="Object to create">PointLight</param>
+                    <param id="1" name="Layer">2</param>
+                    <param id="2" name="X">Orbs.X</param>
+                    <param id="3" name="Y">Orbs.Y</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="853900078689988" type="PointLight">
+                    <param id="0" name="Pin to">Orbs</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
             </actions>
             <sub-events>
                 <event-block any="1" sid="971637440658575">
@@ -704,9 +714,7 @@
             <sub-events>
                 <event-block sid="797039765021085">
                     <conditions>
-                        <condition id="-6" name="Every X seconds" sid="971690962025705" type="System">
-                            <param id="0" name="Interval (seconds)">1.0</param>
-                        </condition>
+                        <condition id="-1" name="Every tick" sid="971690962025705" type="System" />
                     </conditions>
                     <actions>
                         <action id="-16" name="Set opacity" sid="104493144060361" type="MagicCircle">

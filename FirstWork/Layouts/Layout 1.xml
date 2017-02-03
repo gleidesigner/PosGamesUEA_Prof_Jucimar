@@ -474,6 +474,106 @@
             </instances>
             <effects />
         </layer>
+        <layer name="Light" sid="453523612838296">
+            <initially-visible>1</initially-visible>
+            <background-color>0,0,0</background-color>
+            <transparent>0</transparent>
+            <parallax>
+                <x>1</x>
+                <y>1</y>
+            </parallax>
+            <zoom-rate>1</zoom-rate>
+            <opacity>0.5</opacity>
+            <force-own-texture>1</force-own-texture>
+            <global>0</global>
+            <use-render-cells>0</use-render-cells>
+            <blend-mode>0</blend-mode>
+            <effect-fallback>0</effect-fallback>
+            <instances>
+                <instance type="CircleLight" uid="20">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <effect-instances>
+                        <effect-instance type="Pulse">
+                            <parameters>
+                                <center-x>0.3</center-x>
+                                <center-y>0.3</center-y>
+                                <frequency>15</frequency>
+                                <intensity>0.1</intensity>
+                                <lighting>0</lighting>
+                                <speed>5</speed>
+                            </parameters>
+                        </effect-instance>
+                    </effect-instances>
+                    <blend-mode>8</blend-mode>
+                    <effect-fallback>8</effect-fallback>
+                    <world>
+                        <x>190.292221069</x>
+                        <y>224.377349854</y>
+                        <z>0</z>
+                        <width>122</width>
+                        <height>125</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.488000005</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="PointLight" uid="21">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                        <behavior-instance type="Fade">
+                            <properties>
+                                <active-at-start>Yes</active-at-start>
+                                <fade-in-time>20</fade-in-time>
+                                <wait-time>1</wait-time>
+                                <fade-out-time>1</fade-out-time>
+                                <destroy>After fade out</destroy>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <effect-instances>
+                        <effect-instance type="Hue" />
+                        <effect-instance type="Pulse">
+                            <parameters>
+                                <center-x>0.03</center-x>
+                                <center-y>0.03</center-y>
+                                <frequency>15</frequency>
+                                <intensity>0.1</intensity>
+                                <lighting>0</lighting>
+                                <speed>5</speed>
+                            </parameters>
+                        </effect-instance>
+                    </effect-instances>
+                    <blend-mode>8</blend-mode>
+                    <effect-fallback>8</effect-fallback>
+                    <world>
+                        <x>441.640686035</x>
+                        <y>446.356109619</y>
+                        <z>0</z>
+                        <width>62</width>
+                        <height>62</height>
+                        <depth>0</depth>
+                        <hotspotX>0.483870953</hotspotX>
+                        <hotspotY>0.564516127</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+            </instances>
+            <effects />
+        </layer>
         <layer name="HUD" sid="387154583789096">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
