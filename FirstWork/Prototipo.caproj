@@ -256,22 +256,6 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Monster" sid="407769121121778">
-            <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Pathfinding" sid="286756409628621">
-                    <behavior id="Pathfinding" />
-                </behavior-type>
-                <behavior-type name="Fade" sid="844163770819060">
-                    <behavior id="Fade" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="908316239577774" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
         <object-type name="Wall" sid="817767496683574">
             <plugin id="Sprite" />
             <behaviors>

@@ -794,10 +794,10 @@
         </event-block>
         <event-block sid="442735754850578">
             <conditions>
-                <condition id="-18" name="On created" sid="985286767995491" type="Monster" />
+                <condition id="-18" name="On created" sid="985286767995491" type="Monsters" />
             </conditions>
             <actions>
-                <action behavior="Pathfinding" id="0" name="Find path" sid="422207188826830" type="Monster">
+                <action behavior="Pathfinding" id="0" name="Find path" sid="422207188826830" type="Monsters">
                     <param id="0" name="X">MagicCircle.X</param>
                     <param id="1" name="Y">MagicCircle.Y</param>
                 </action>
@@ -805,10 +805,10 @@
         </event-block>
         <event-block sid="451499987884913">
             <conditions>
-                <condition behavior="Pathfinding" id="0" name="On path found" sid="276394010051928" type="Monster" />
+                <condition behavior="Pathfinding" id="0" name="On path found" sid="276394010051928" type="Monsters" />
             </conditions>
             <actions>
-                <action behavior="Pathfinding" id="1" name="Move along path" sid="615190873534742" type="Monster" />
+                <action behavior="Pathfinding" id="1" name="Move along path" sid="615190873534742" type="Monsters" />
             </actions>
         </event-block>
         <event-block sid="578281401570273">
@@ -827,7 +827,7 @@
                     </conditions>
                     <actions>
                         <action id="-3" name="Create object" sid="818512865831165" type="System">
-                            <param id="0" name="Object to create">Monster</param>
+                            <param id="0" name="Object to create">Monsters</param>
                             <param id="1" name="Layer">1</param>
                             <param id="2" name="X">MonsterSpawner.X</param>
                             <param id="3" name="Y">MonsterSpawner.Y</param>
@@ -838,12 +838,12 @@
         </event-block>
         <event-block sid="321764555810498">
             <conditions>
-                <condition id="1" name="Is overlapping another object" sid="249149454987015" type="Monster">
+                <condition id="1" name="Is overlapping another object" sid="249149454987015" type="Monsters">
                     <param id="0" name="Object">MagicCircle</param>
                 </condition>
             </conditions>
             <actions>
-                <action behavior="Pathfinding" id="2" name="Stop" sid="522560582086011" type="Monster" />
+                <action behavior="Pathfinding" id="2" name="Stop" sid="522560582086011" type="Monsters" />
             </actions>
             <sub-events>
                 <event-block sid="797039765021085">
@@ -870,7 +870,7 @@
         <event-block sid="223438097545445">
             <conditions>
                 <condition id="17" name="On tap object" sid="643831338626813" type="Touch">
-                    <param id="0" name="Object">Monster</param>
+                    <param id="0" name="Object">Monsters</param>
                 </condition>
             </conditions>
             <actions />
@@ -878,6 +878,24 @@
                 <event-block sid="236848270669144">
                     <conditions>
                         <condition id="-9" name="Is visible" sid="227605004454663" type="HUDRedOrb" />
+                    </conditions>
+                    <actions />
+                </event-block>
+                <event-block sid="825180140119638">
+                    <conditions>
+                        <condition id="-9" name="Is visible" sid="757471136753940" type="HUDGreenOrb" />
+                    </conditions>
+                    <actions />
+                </event-block>
+                <event-block sid="874129506549518">
+                    <conditions>
+                        <condition id="-9" name="Is visible" sid="824303795215031" type="HUDBlueOrb" />
+                    </conditions>
+                    <actions />
+                </event-block>
+                <event-block sid="541178354833878">
+                    <conditions>
+                        <condition id="-9" name="Is visible" sid="905040594873400" type="HUDYellowOrb" />
                     </conditions>
                     <actions />
                 </event-block>
@@ -914,6 +932,68 @@
                 </action>
                 <action id="-2" name="Go to layout" sid="134168751397452" type="System">
                     <param id="0" name="Layout">Home_Layout</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="305590958778962">
+            <conditions>
+                <condition id="-13" name="Is between angles" sid="314825164112621" type="Monsters">
+                    <param id="0" name="First angle">315</param>
+                    <param id="1" name="Second angle">45</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="134225276441717" type="Monsters">
+                    <param id="0" name="Animation">&quot;Right&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="8" name="Set flipped" sid="246527578429370" type="Monsters">
+                    <param id="0" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="676173774764962">
+            <conditions>
+                <condition id="-13" name="Is between angles" sid="678014348522375" type="Monsters">
+                    <param id="0" name="First angle">45</param>
+                    <param id="1" name="Second angle">135</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="135501002026059" type="Monsters">
+                    <param id="0" name="Animation">&quot;Down&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="483502967990109">
+            <conditions>
+                <condition id="-13" name="Is between angles" sid="175545909352199" type="Monsters">
+                    <param id="0" name="First angle">135</param>
+                    <param id="1" name="Second angle">225</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="407191596796849" type="Monsters">
+                    <param id="0" name="Animation">&quot;Right&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="8" name="Set flipped" sid="918002160830620" type="Monsters">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="354622011782017">
+            <conditions>
+                <condition id="-13" name="Is between angles" sid="149794244358638" type="Monsters">
+                    <param id="0" name="First angle">225</param>
+                    <param id="1" name="Second angle">315</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="356103612991051" type="Monsters">
+                    <param id="0" name="Animation">&quot;Up&quot;</param>
+                    <param id="1" name="From">1</param>
                 </action>
             </actions>
         </event-block>
