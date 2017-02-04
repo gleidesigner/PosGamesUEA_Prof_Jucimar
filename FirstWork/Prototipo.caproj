@@ -773,6 +773,16 @@
     </global-instances>
     <sounds-folder>
         <file name="snap2.ogg" />
+        <file name="Proverbio_X_-_Ainda_H_Lugar_2_.m4a" />
+        <file name="Proverbio_X_-_Ainda_H_Lugar_2_.ogg" />
+        <file name="fireball.m4a" />
+        <file name="fireball.ogg" />
+        <file name="Spell1.m4a" />
+        <file name="Spell1.ogg" />
+        <file name="madeira.m4a" />
+        <file name="madeira.ogg" />
+        <file name="Ru_do_El_trico_Efeito_Sonoro_m.m4a" />
+        <file name="Ru_do_El_trico_Efeito_Sonoro_m.ogg" />
     </sounds-folder>
     <music-folder />
     <files-folder>

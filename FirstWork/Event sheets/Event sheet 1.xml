@@ -1049,5 +1049,90 @@
                 </action>
             </actions>
         </event-block>
+        <event-group description="" sid="494542608095942" title="Sound Effects">
+            <sub-events>
+                <event-group description="" sid="472920421147804" title="Game play">
+                    <sub-events>
+                        <event-block sid="560168289439876">
+                            <conditions>
+                                <condition id="1" name="Is overlapping another object" sid="348401438347928" type="FireBall">
+                                    <param id="0" name="Object">Tilemap</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Play" sid="211674110235852" type="Audio">
+                                    <param id="0" name="Audio file">fireball</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block any="1" sid="831890588423892">
+                            <conditions>
+                                <condition id="1" name="Is overlapping another object" sid="452947516127125" type="Shock">
+                                    <param id="0" name="Object">Tilemap</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Play" sid="433020478600503" type="Audio">
+                                    <param id="0" name="Audio file">Ru_do_El_trico_Efeito_Sonoro_m</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="224785303916906">
+                            <conditions>
+                                <condition id="1" name="Is overlapping another object" sid="100387317950301" type="Trunk">
+                                    <param id="0" name="Object">Tilemap</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Play" sid="541742331427511" type="Audio">
+                                    <param id="0" name="Audio file">madeira</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="591496025895370">
+                            <conditions>
+                                <condition id="1" name="Is overlapping another object" sid="483596226841715" type="Icicle">
+                                    <param id="0" name="Object">Tilemap</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Play" sid="161456807723922" type="Audio">
+                                    <param id="0" name="Audio file">Spell1</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="518605948625614" title="Start">
+                    <sub-events>
+                        <event-block sid="306544283575686">
+                            <conditions>
+                                <condition id="-2" name="On start of layout" sid="301033103914541" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Play" sid="304256260079507" type="Audio">
+                                    <param id="0" name="Audio file">Proverbio_X_-_Ainda_H_Lugar_2_</param>
+                                    <param id="2" name="Loop">1</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+            </sub-events>
+        </event-group>
     </events>
 </c2eventsheet>
