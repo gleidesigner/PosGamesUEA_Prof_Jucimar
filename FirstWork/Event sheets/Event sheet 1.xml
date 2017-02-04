@@ -1093,5 +1093,203 @@
                 </action>
             </actions>
         </event-block>
+<event-group title="Sound Effects" sid="494542608095942" description="">
+
+
+<sub-events>
+
+
+<event-group title="Game play" sid="472920421147804" description="">
+
+
+<sub-events>
+
+
+<event-block sid="560168289439876">
+
+
+<conditions>
+
+
+<condition type="FireBall" sid="348401438347928" name="Is overlapping another object" id="1">
+
+<param name="Object" id="0">Tilemap</param>
+
+</condition>
+
+</conditions>
+
+
+<actions>
+
+
+<action type="Audio" sid="211674110235852" name="Play" id="0">
+
+<param name="Audio file" id="0">fireball</param>
+
+<param name="Loop" id="2">0</param>
+
+<param name="Volume" id="3">0</param>
+
+<param name="Tag (optional)" id="1">""</param>
+
+</action>
+
+</actions>
+
+</event-block>
+
+
+<event-block sid="831890588423892" any="1">
+
+
+<conditions>
+
+
+<condition type="Shock" sid="452947516127125" name="Is overlapping another object" id="1">
+
+<param name="Object" id="0">Tilemap</param>
+
+</condition>
+
+</conditions>
+
+
+<actions>
+
+
+<action type="Audio" sid="433020478600503" name="Play" id="0">
+
+<param name="Audio file" id="0">Ru_do_El_trico_Efeito_Sonoro_m</param>
+
+<param name="Loop" id="2">0</param>
+
+<param name="Volume" id="3">0</param>
+
+<param name="Tag (optional)" id="1">""</param>
+
+</action>
+
+</actions>
+
+</event-block>
+
+
+<event-block sid="224785303916906">
+
+
+<conditions>
+
+
+<condition type="Trunk" sid="100387317950301" name="Is overlapping another object" id="1">
+
+<param name="Object" id="0">Tilemap</param>
+
+</condition>
+
+</conditions>
+
+
+<actions>
+
+
+<action type="Audio" sid="541742331427511" name="Play" id="0">
+
+<param name="Audio file" id="0">madeira</param>
+
+<param name="Loop" id="2">0</param>
+
+<param name="Volume" id="3">0</param>
+
+<param name="Tag (optional)" id="1">""</param>
+
+</action>
+
+</actions>
+
+</event-block>
+
+
+<event-block sid="591496025895370">
+
+
+<conditions>
+
+
+<condition type="Icicle" sid="483596226841715" name="Is overlapping another object" id="1">
+
+<param name="Object" id="0">Tilemap</param>
+
+</condition>
+
+</conditions>
+
+
+<actions>
+
+
+<action type="Audio" sid="161456807723922" name="Play" id="0">
+
+<param name="Audio file" id="0">Spell1</param>
+
+<param name="Loop" id="2">0</param>
+
+<param name="Volume" id="3">0</param>
+
+<param name="Tag (optional)" id="1">""</param>
+
+</action>
+
+</actions>
+
+</event-block>
+
+</sub-events>
+
+</event-group>
+
+
+<event-group title="Start" sid="518605948625614" description="">
+
+
+<sub-events>
+
+
+<event-block sid="306544283575686">
+
+
+<conditions>
+
+<condition type="System" sid="301033103914541" name="On start of layout" id="-2"/>
+
+</conditions>
+
+
+<actions>
+
+
+<action type="Audio" sid="304256260079507" name="Play" id="0">
+
+<param name="Audio file" id="0">Proverbio_X_-_Ainda_H_Lugar_2_</param>
+
+<param name="Loop" id="2">1</param>
+
+<param name="Volume" id="3">0</param>
+
+<param name="Tag (optional)" id="1">""</param>
+
+</action>
+
+</actions>
+
+</event-block>
+
+</sub-events>
+
+</event-group>
+
+</sub-events>
+
+</event-group>
     </events>
 </c2eventsheet>
