@@ -495,7 +495,7 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="779227256649088" speed="5">
-                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\Gleides\Pictures\Assets_Games\Assets\creditos - time.png">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\Gleides\Google Drive\Tap Game\Sprites\creditos-04-04.png">
                         <collision-poly>
                             <point x="0.464373" y="0.273319" />
                             <point x="0.5" y="0.000723066" />
