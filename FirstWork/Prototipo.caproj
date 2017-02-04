@@ -36,7 +36,6 @@
         <effect author="Scirra" id="hueblend">Hue</effect>
         <effect author="Danguafer/Silexars" id="pulse">Pulse</effect>
         <effect author="Scirra" id="setcolor">Set color</effect>
-        <effect author="Brad Larson" id="sphere">Sphere</effect>
     </used-effects>
     <configurations>
         <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
@@ -479,7 +478,7 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="779227256649088" speed="5">
-                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\Gleides\Google Drive\Tap Game\Sprites\creditos-04-04.png">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\Gleides\Pictures\Assets_Games\Assets\creditos - time.png">
                         <collision-poly>
                             <point x="0.464373" y="0.273319" />
                             <point x="0.5" y="0.000723066" />
@@ -578,6 +577,9 @@
             <behaviors>
                 <behavior-type name="Fade" sid="791140815592376">
                     <behavior id="Fade" />
+                </behavior-type>
+                <behavior-type name="Bullet" sid="974307926387984">
+                    <behavior id="Bullet" />
                 </behavior-type>
             </behaviors>
             <animation-folder>
@@ -698,11 +700,6 @@
                     <behavior id="custom" />
                 </behavior-type>
             </behaviors>
-            <effects>
-                <effect-type name="Sphere">
-                    <effect id="sphere" />
-                </effect-type>
-            </effects>
         </family>
         <family name="Spells" plugin-id="Sprite" sid="649470718778405">
             <members>
