@@ -353,9 +353,9 @@
                                 <max-speed>50</max-speed>
                                 <acceleration>1000</acceleration>
                                 <deceleration>2000</deceleration>
-                                <rotate-speed>135</rotate-speed>
+                                <rotate-speed>200</rotate-speed>
                                 <rotate-object>Yes</rotate-object>
-                                <diagonals>Enabled</diagonals>
+                                <diagonals>Disabled</diagonals>
                                 <initial-state>Enabled</initial-state>
                             </properties>
                         </behavior-instance>
@@ -408,9 +408,9 @@
                                 <max-speed>50</max-speed>
                                 <acceleration>1000</acceleration>
                                 <deceleration>2000</deceleration>
-                                <rotate-speed>135</rotate-speed>
+                                <rotate-speed>200</rotate-speed>
                                 <rotate-object>Yes</rotate-object>
-                                <diagonals>Enabled</diagonals>
+                                <diagonals>Disabled</diagonals>
                                 <initial-state>Enabled</initial-state>
                             </properties>
                         </behavior-instance>
@@ -463,9 +463,9 @@
                                 <max-speed>50</max-speed>
                                 <acceleration>1000</acceleration>
                                 <deceleration>2000</deceleration>
-                                <rotate-speed>135</rotate-speed>
+                                <rotate-speed>200</rotate-speed>
                                 <rotate-object>Yes</rotate-object>
-                                <diagonals>Enabled</diagonals>
+                                <diagonals>Disabled</diagonals>
                                 <initial-state>Enabled</initial-state>
                             </properties>
                         </behavior-instance>
@@ -518,9 +518,9 @@
                                 <max-speed>50</max-speed>
                                 <acceleration>1000</acceleration>
                                 <deceleration>2000</deceleration>
-                                <rotate-speed>135</rotate-speed>
+                                <rotate-speed>200</rotate-speed>
                                 <rotate-object>Yes</rotate-object>
-                                <diagonals>Enabled</diagonals>
+                                <diagonals>Disabled</diagonals>
                                 <initial-state>Enabled</initial-state>
                             </properties>
                         </behavior-instance>
@@ -550,6 +550,148 @@
                         <depth>0</depth>
                         <hotspotX>0.486486495</hotspotX>
                         <hotspotY>0.539682567</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="FireBall" uid="12">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="DestroyOutsideLayout2" />
+                        <behavior-instance type="DestroyOutsideLayout" />
+                        <behavior-instance type="Bullet">
+                            <properties>
+                                <speed>400</speed>
+                                <acceleration>0</acceleration>
+                                <gravity>0</gravity>
+                                <bounce-off-solids>No</bounce-off-solids>
+                                <set-angle>Yes</set-angle>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>507</x>
+                        <y>531</y>
+                        <z>0</z>
+                        <width>56</width>
+                        <height>21</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.476190478</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Shock" uid="40">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="DestroyOutsideLayout2" />
+                        <behavior-instance type="Fade">
+                            <properties>
+                                <active-at-start>Yes</active-at-start>
+                                <fade-in-time>0</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>1</fade-out-time>
+                                <destroy>After fade out</destroy>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>525</x>
+                        <y>596</y>
+                        <z>0</z>
+                        <width>65</width>
+                        <height>22</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Icicle" uid="41">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="DestroyOutsideLayout2" />
+                        <behavior-instance type="DestroyOutsideLayout" />
+                        <behavior-instance type="Bullet">
+                            <properties>
+                                <speed>400</speed>
+                                <acceleration>0</acceleration>
+                                <gravity>0</gravity>
+                                <bounce-off-solids>No</bounce-off-solids>
+                                <set-angle>Yes</set-angle>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>550</x>
+                        <y>547</y>
+                        <z>0</z>
+                        <width>66</width>
+                        <height>17</height>
+                        <depth>0</depth>
+                        <hotspotX>0.484848499</hotspotX>
+                        <hotspotY>0.470588237</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Trunk" uid="42">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="DestroyOutsideLayout2" />
+                        <behavior-instance type="DestroyOutsideLayout" />
+                        <behavior-instance type="Bullet">
+                            <properties>
+                                <speed>400</speed>
+                                <acceleration>0</acceleration>
+                                <gravity>0</gravity>
+                                <bounce-off-solids>No</bounce-off-solids>
+                                <set-angle>Yes</set-angle>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>492</x>
+                        <y>597</y>
+                        <z>0</z>
+                        <width>58</width>
+                        <height>21</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.523809552</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -804,11 +946,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>32.505001068</x>
-                        <y>599.330993652</y>
+                        <x>31</x>
+                        <y>599</y>
                         <z>0</z>
-                        <width>64</width>
-                        <height>64</height>
+                        <width>60</width>
+                        <height>60</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -826,11 +968,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>32.505001068</x>
-                        <y>599.330993652</y>
+                        <x>31</x>
+                        <y>599</y>
                         <z>0</z>
-                        <width>64</width>
-                        <height>64</height>
+                        <width>60</width>
+                        <height>60</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -848,11 +990,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>32.505001068</x>
-                        <y>599.330993652</y>
+                        <x>31</x>
+                        <y>599</y>
                         <z>0</z>
-                        <width>64</width>
-                        <height>64</height>
+                        <width>60</width>
+                        <height>60</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -870,11 +1012,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>32.505210876</x>
-                        <y>599.331176758</y>
+                        <x>31</x>
+                        <y>599</y>
                         <z>0</z>
-                        <width>64</width>
-                        <height>64</height>
+                        <width>60</width>
+                        <height>60</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -897,7 +1039,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>277.444824219</x>
+                        <x>308.444824219</x>
                         <y>584.260559082</y>
                         <z>0</z>
                         <width>120.702148438</width>
@@ -924,8 +1066,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>290.846832275</x>
-                        <y>578.374450684</y>
+                        <x>289</x>
+                        <y>607</y>
                         <z>0</z>
                         <width>187.637405396</width>
                         <height>41.270202637</height>

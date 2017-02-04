@@ -6,7 +6,7 @@
         <variable constant="0" name="Score" sid="282431716719295" static="0" type="number">0</variable>
         <variable comment="0 = Red, 1 = Green, 2 = Blue, 3 = Yellow" constant="0" name="OrbSequence" sid="357652209226878" static="0" type="number">0</variable>
         <variable comment="0 = Red, 1 = Green, 2 = Blue, 3 = Yellow" constant="0" name="OrbCollision" sid="437050930948649" static="0" type="number">0</variable>
-        <variable comment="Maior valor menor frequencia de respawn" constant="0" name="OrbFrequency" sid="533211467097772" static="0" type="number">10</variable>
+        <variable comment="Maior valor menor frequencia de respawn" constant="0" name="OrbFrequency" sid="533211467097772" static="0" type="number">20</variable>
         <variable comment="Velocidade dos orbs" constant="0" name="OrbSpeed" sid="340247056138377" static="0" type="number">1000</variable>
         <variable comment="Define qual Orb vai nascer no topo" constant="0" name="TopSpawner" sid="705364746027670" static="0" type="number">0</variable>
         <variable comment="Define qual Orb vai nascer ne esquerda" constant="0" name="LeftSpawner" sid="337039603654540" static="0" type="number">0</variable>
@@ -785,7 +785,7 @@
             <actions>
                 <action id="-10" name="Add to" sid="441850301834513" type="System">
                     <param id="0" name="Variable">Score</param>
-                    <param id="1" name="Value">MagicCircle.Rotate.Speed</param>
+                    <param id="1" name="Value">MagicCircle.Rotate.Speed*MagicCircle.Opacity</param>
                 </action>
                 <action id="0" name="Set text" sid="875869327334938" type="Points">
                     <param id="0" name="Text">Score</param>
@@ -858,15 +858,6 @@
                 </event-block>
             </sub-events>
         </event-block>
-        <event-block sid="113227825410494">
-            <conditions>
-                <condition id="-10" name="Compare opacity" sid="852086325495062" type="MagicCircle">
-                    <param id="0" name="Comparison">3</param>
-                    <param id="1" name="Opacity">0</param>
-                </condition>
-            </conditions>
-            <actions />
-        </event-block>
         <event-block sid="223438097545445">
             <conditions>
                 <condition id="17" name="On tap object" sid="643831338626813" type="Touch">
@@ -879,61 +870,67 @@
                     <conditions>
                         <condition id="-9" name="Is visible" sid="227605004454663" type="HUDRedOrb" />
                     </conditions>
-                    <actions />
+                    <actions>
+                        <action id="0" name="Spawn another object" sid="586886762794837" type="Player">
+                            <param id="0" name="Object">FireBall</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-22" name="Set angle toward position" sid="665411844887670" type="FireBall">
+                            <param id="0" name="X">Monsters.X</param>
+                            <param id="1" name="Y">Monsters.Y</param>
+                        </action>
+                    </actions>
                 </event-block>
                 <event-block sid="825180140119638">
                     <conditions>
                         <condition id="-9" name="Is visible" sid="757471136753940" type="HUDGreenOrb" />
                     </conditions>
-                    <actions />
+                    <actions>
+                        <action id="0" name="Spawn another object" sid="204003502398175" type="Player">
+                            <param id="0" name="Object">Trunk</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-22" name="Set angle toward position" sid="900622532898856" type="Trunk">
+                            <param id="0" name="X">Monsters.X</param>
+                            <param id="1" name="Y">Monsters.Y</param>
+                        </action>
+                    </actions>
                 </event-block>
                 <event-block sid="874129506549518">
                     <conditions>
                         <condition id="-9" name="Is visible" sid="824303795215031" type="HUDBlueOrb" />
                     </conditions>
-                    <actions />
+                    <actions>
+                        <action id="0" name="Spawn another object" sid="729942384917561" type="Player">
+                            <param id="0" name="Object">Icicle</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-22" name="Set angle toward position" sid="953403088406857" type="Icicle">
+                            <param id="0" name="X">Monsters.X</param>
+                            <param id="1" name="Y">Monsters.Y</param>
+                        </action>
+                    </actions>
                 </event-block>
                 <event-block sid="541178354833878">
                     <conditions>
                         <condition id="-9" name="Is visible" sid="905040594873400" type="HUDYellowOrb" />
                     </conditions>
-                    <actions />
+                    <actions>
+                        <action id="0" name="Spawn another object" sid="836979193603259" type="Player">
+                            <param id="0" name="Object">Shock</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-22" name="Set angle toward position" sid="215135872197096" type="Shock">
+                            <param id="0" name="X">Monsters.X</param>
+                            <param id="1" name="Y">Monsters.Y</param>
+                        </action>
+                    </actions>
                 </event-block>
             </sub-events>
-        </event-block>
-        <event-block sid="652940973880128">
-            <conditions>
-                <condition id="17" name="On tap object" sid="987425176415167" type="Touch">
-                    <param id="0" name="Object">BtnBackHome</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-16" name="Wait" sid="789828199509057" type="System">
-                    <param id="0" name="Seconds">1.0</param>
-                </action>
-                <action id="0" name="Play" sid="980028677947827" type="Audio">
-                    <param id="0" name="Audio file">snap2</param>
-                    <param id="2" name="Loop">0</param>
-                    <param id="3" name="Volume">0</param>
-                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
-                </action>
-                <action id="-3" name="Create object" sid="161087828841603" type="System">
-                    <param id="0" name="Object to create">Transition</param>
-                    <param id="1" name="Layer">0</param>
-                    <param id="2" name="X">-10</param>
-                    <param id="3" name="Y">-10</param>
-                </action>
-                <action id="-16" name="Wait" sid="107434243614715" type="System">
-                    <param id="0" name="Seconds">1.0</param>
-                </action>
-                <action id="33" name="Stop all" sid="538864796773264" type="Audio" />
-                <action id="-16" name="Wait" sid="535808297355237" type="System">
-                    <param id="0" name="Seconds">0.0</param>
-                </action>
-                <action id="-2" name="Go to layout" sid="134168751397452" type="System">
-                    <param id="0" name="Layout">Home_Layout</param>
-                </action>
-            </actions>
         </event-block>
         <event-block sid="305590958778962">
             <conditions>
@@ -994,6 +991,61 @@
                 <action id="4" name="Set animation" sid="356103612991051" type="Monsters">
                     <param id="0" name="Animation">&quot;Up&quot;</param>
                     <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="141488374666555">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="765986990284172" type="Spells">
+                    <param id="0" name="Object">Monsters</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Fade" id="1" name="Start fade" sid="425448657687826" type="Monsters" />
+                <action behavior="Pathfinding" id="2" name="Stop" sid="609414567912875" type="Monsters" />
+                <action id="-9" name="Destroy" sid="274165709595432" type="Spells" />
+            </actions>
+        </event-block>
+        <event-block sid="113227825410494">
+            <conditions>
+                <condition id="-10" name="Compare opacity" sid="852086325495062" type="MagicCircle">
+                    <param id="0" name="Comparison">3</param>
+                    <param id="1" name="Opacity">0</param>
+                </condition>
+            </conditions>
+            <actions />
+        </event-block>
+        <event-block sid="652940973880128">
+            <conditions>
+                <condition id="17" name="On tap object" sid="987425176415167" type="Touch">
+                    <param id="0" name="Object">BtnBackHome</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="789828199509057" type="System">
+                    <param id="0" name="Seconds">1.0</param>
+                </action>
+                <action id="0" name="Play" sid="980028677947827" type="Audio">
+                    <param id="0" name="Audio file">snap2</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-3" name="Create object" sid="161087828841603" type="System">
+                    <param id="0" name="Object to create">Transition</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">-10</param>
+                    <param id="3" name="Y">-10</param>
+                </action>
+                <action id="-16" name="Wait" sid="107434243614715" type="System">
+                    <param id="0" name="Seconds">1.0</param>
+                </action>
+                <action id="33" name="Stop all" sid="538864796773264" type="Audio" />
+                <action id="-16" name="Wait" sid="535808297355237" type="System">
+                    <param id="0" name="Seconds">0.0</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="134168751397452" type="System">
+                    <param id="0" name="Layout">Home_Layout</param>
                 </action>
             </actions>
         </event-block>

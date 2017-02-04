@@ -522,46 +522,6 @@
                 </behavior-type>
             </behaviors>
             <animation-folder>
-                <animation framecount="8" loop="0" name="Left" pingpong="0" repeatcount="1" repeatto="0" sid="910522301821037" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.526316" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.52381" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.52381" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.52381" />
-                    <frame duration="1" hotspotX="0.507937" hotspotY="0.55" />
-                    <frame duration="1" hotspotX="0.509091" hotspotY="0.55" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.526316" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.55" />
-                </animation>
-                <animation framecount="8" loop="0" name="UpLeft" pingpong="0" repeatcount="1" repeatto="0" sid="474168744101655" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.511111" hotspotY="0.516129" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.515152" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.517241" />
-                    <frame duration="1" hotspotX="0.511111" hotspotY="0.516129" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.510638" hotspotY="0.5" />
-                </animation>
-                <animation framecount="8" loop="0" name="Up" pingpong="0" repeatcount="1" repeatto="0" sid="691285314912298" speed="5">
-                    <frame duration="1" hotspotX="0.52381" hotspotY="0.485714" />
-                    <frame duration="1" hotspotX="0.545455" hotspotY="0.486486" />
-                    <frame duration="1" hotspotX="0.52381" hotspotY="0.486486" />
-                    <frame duration="1" hotspotX="0.52381" hotspotY="0.487179" />
-                    <frame duration="1" hotspotX="0.526316" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.472222" />
-                    <frame duration="1" hotspotX="0.526316" hotspotY="0.487179" />
-                    <frame duration="1" hotspotX="0.526316" hotspotY="0.473684" />
-                </animation>
-                <animation framecount="8" loop="0" name="UpRight" pingpong="0" repeatcount="1" repeatto="0" sid="683842405139201" speed="5">
-                    <frame duration="1" hotspotX="0.487805" hotspotY="0.483871" />
-                    <frame duration="1" hotspotX="0.488372" hotspotY="0.46875" />
-                    <frame duration="1" hotspotX="0.489362" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.479167" hotspotY="0.484848" />
-                    <frame duration="1" hotspotX="0.477273" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.489362" hotspotY="0.483871" />
-                    <frame duration="1" hotspotX="0.488889" hotspotY="0.484848" />
-                    <frame duration="1" hotspotX="0.478261" hotspotY="0.46875" />
-                </animation>
                 <animation framecount="8" loop="0" name="Right" pingpong="0" repeatcount="1" repeatto="0" sid="133269243681245" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.47619" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.473684" />
@@ -571,36 +531,6 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.473684" />
-                </animation>
-                <animation framecount="8" loop="0" name="DownRight" pingpong="0" repeatcount="1" repeatto="0" sid="791816082787820" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.482759" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.466667" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.482759" />
-                    <frame duration="1" hotspotX="0.511111" hotspotY="0.466667" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.46875" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.482759" />
-                    <frame duration="1" hotspotX="0.511111" hotspotY="0.483871" />
-                    <frame duration="1" hotspotX="0.510638" hotspotY="0.46875" />
-                </animation>
-                <animation framecount="8" loop="0" name="Down" pingpong="0" repeatcount="1" repeatto="0" sid="600040943175816" speed="5">
-                    <frame duration="1" hotspotX="0.47619" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.454545" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.47619" hotspotY="0.514286" />
-                    <frame duration="1" hotspotX="0.47619" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.473684" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.513514" />
-                    <frame duration="1" hotspotX="0.473684" hotspotY="0.514286" />
-                    <frame duration="1" hotspotX="0.473684" hotspotY="0.5" />
-                </animation>
-                <animation framecount="8" loop="0" name="DownLeft" pingpong="0" repeatcount="1" repeatto="0" sid="396448909524008" speed="5">
-                    <frame duration="1" hotspotX="0.487805" hotspotY="0.482759" />
-                    <frame duration="1" hotspotX="0.488372" hotspotY="0.482759" />
-                    <frame duration="1" hotspotX="0.489362" hotspotY="0.482759" />
-                    <frame duration="1" hotspotX="0.479167" hotspotY="0.46875" />
-                    <frame duration="1" hotspotX="0.477273" hotspotY="0.466667" />
-                    <frame duration="1" hotspotX="0.489362" hotspotY="0.483871" />
-                    <frame duration="1" hotspotX="0.488889" hotspotY="0.466667" />
-                    <frame duration="1" hotspotX="0.478261" hotspotY="0.46875" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -781,6 +711,11 @@
                 <member>Shock</member>
                 <member>Trunk</member>
             </members>
+            <behaviors>
+                <behavior-type name="DestroyOutsideLayout2" sid="266694448363294">
+                    <behavior id="destroy" />
+                </behavior-type>
+            </behaviors>
         </family>
         <family name="Monsters" plugin-id="Sprite" sid="968170931524643">
             <members>
