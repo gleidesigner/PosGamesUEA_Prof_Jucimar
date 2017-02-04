@@ -683,6 +683,33 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="GameOverSprite" sid="477187586457977">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="479427844466157" speed="5">
+                    <frame duration="1" hotspotX="0.507937" hotspotY="0.5" original-source="C:\Users\Gleides\Google Drive\Tap Game\Sprites\gameover.png">
+                        <collision-poly>
+                            <point x="0.262009" y="0.208696" />
+                            <point x="0.50655" y="0.208696" />
+                            <point x="0.941048" y="0.0573913" />
+                            <point x="0.984716" y="0.49913" />
+                            <point x="0.965065" y="0.961739" />
+                            <point x="0.50655" y="0.998261" />
+                            <point x="0.0327511" y="0.973913" />
+                            <point x="0.00218341" y="0.49913" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Restart" sid="548732173865884">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="661049041893755" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families>
         <family name="Orbs" plugin-id="Sprite" sid="112826236286398">

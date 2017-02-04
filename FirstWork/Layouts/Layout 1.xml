@@ -1172,11 +1172,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>199.484710693</x>
-                        <y>610.722900391</y>
+                        <x>590</x>
+                        <y>290</y>
                         <z>0</z>
-                        <width>57.090396881</width>
-                        <height>52.179393768</height>
+                        <width>88</width>
+                        <height>87</height>
                         <depth>0</depth>
                         <hotspotX>0.513392866</hotspotX>
                         <hotspotY>0.513392866</hotspotY>
@@ -1221,6 +1221,50 @@
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.474489808</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="GameOverSprite" uid="43">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>641</x>
+                        <y>73</y>
+                        <z>0</z>
+                        <width>315</width>
+                        <height>254</height>
+                        <depth>0</depth>
+                        <hotspotX>0.507936537</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Restart" uid="44">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>697</x>
+                        <y>276</y>
+                        <z>0</z>
+                        <width>127</width>
+                        <height>122</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
